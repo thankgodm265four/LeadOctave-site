@@ -1,0 +1,27 @@
+---
+import ServiceNav from "../components/ServiceNav.jsx";
+import OctaveModel from "../components/OctaveModel.jsx";
+import Footer from "../components/Footer.jsx";
+import FloatingElements from "../components/FloatingElements.jsx";
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Octave Model™ | LeadOctave</title>
+        <meta
+            name="description"
+            content="Eight measurable pillars that transform chaos into clarity, and leaders into systems architects."
+        />
+        <link rel="icon" type="image/png" href="/image/leadoctave-logo.png" />
+    </head>
+    <body class="antialiased">
+        <FloatingElements client:load />
+        <ServiceNav client:load />
+        <OctaveModel client:load />
+        <Footer client:load />
+    </body>
+</html>

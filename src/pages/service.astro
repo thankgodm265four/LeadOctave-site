@@ -1,0 +1,27 @@
+---
+import ServiceNav from "../components/ServiceNav.jsx";
+import ServiceLanding from "../components/services/ServiceLanding.jsx";
+import Footer from "../components/Footer.jsx";
+import FloatingElements from "../components/FloatingElements.jsx";
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Our Services | LeadOctave</title>
+        <meta
+            name="description"
+            content="Comprehensive leadership solutions designed to move your organization from friction to flow."
+        />
+        <link rel="icon" type="image/png" href="/image/leadoctave-logo.png" />
+    </head>
+    <body class="antialiased">
+        <FloatingElements client:load />
+        <ServiceNav client:load />
+        <ServiceLanding client:load />
+        <Footer client:load />
+    </body>
+</html>

@@ -1,0 +1,27 @@
+---
+import ServiceNav from "../../components/ServiceNav.jsx";
+import SpeakingStrategy from "../../components/services/SpeakingStrategy.jsx";
+import Footer from "../../components/Footer.jsx";
+import FloatingElements from "../../components/FloatingElements.jsx";
+import "../../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Speaking & Strategic Conversations | LeadOctave</title>
+        <meta
+            name="description"
+            content="Keynotes and workshops that move organizations from insight to action."
+        />
+        <link rel="icon" type="image/png" href="/image/leadoctave-logo.png" />
+    </head>
+    <body class="antialiased">
+        <FloatingElements client:load />
+        <ServiceNav client:load />
+        <SpeakingStrategy client:load />
+        <Footer client:load />
+    </body>
+</html>

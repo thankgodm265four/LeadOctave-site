@@ -1,0 +1,121 @@
+---
+import AnnouncementBar from "../components/AnnouncementBar.jsx";
+import HeroNavBar from "../components/HeroNavBar.jsx";
+import MarqueeBanner from "../components/MarqueeBanner.jsx";
+import ClientLogos from "../components/ClientLogos.jsx";
+import PillarsSection from "../components/PillarsSection.jsx";
+import FeaturesSection from "../components/FeaturesSection.jsx";
+import PromiseSection from "../components/PromiseSection.jsx";
+import ServicesGrid from "../components/ServicesGrid.jsx";
+import StatsCounter from "../components/StatsCounter.jsx";
+import VideoShowcase from "../components/VideoShowcase.jsx";
+import FounderTeaser from "../components/FounderTeaser.jsx";
+import MultiViewTestimonialSlider from "../components/MultiViewTestimonialSlider.jsx";
+import FAQSection from "../components/FAQSection.jsx";
+import ClosingCTA from "../components/ClosingCTA.jsx";
+import Footer from "../components/Footer.jsx";
+import FloatingElements from "../components/FloatingElements.jsx";
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeadOctave - Build Leadership That Lasts Beyond You</title>
+    <meta
+      name="description"
+      content="Leadership systems that transform organizations from chaos to cadence. Build frameworks that scale and endure with the Octave Model™."
+    />
+    <meta
+      name="keywords"
+      content="leadership, executive coaching, team alignment, organizational culture, leadership training, octave model, Joshua Tolofari"
+    />
+    <link rel="icon" type="image/png" href="/image/leadoctave-logo.png" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="LeadOctave - Build Leadership That Lasts Beyond You"
+    />
+    <meta
+      property="og:description"
+      content="Leadership systems that transform organizations from chaos to cadence."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/image/leadoctave-logo.png" />
+    <meta property="og:url" content="https://leadoctave.com" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="LeadOctave - Build Leadership That Lasts"
+    />
+    <meta
+      name="twitter:description"
+      content="Leadership systems that transform organizations from chaos to cadence."
+    />
+
+    <!-- Preconnect for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Smooth scrolling -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <!-- Announcement Bar - Rotating announcements -->
+    <AnnouncementBar client:load />
+
+    <!-- Floating Elements (Progress bar, scroll to top, quick actions) -->
+    <FloatingElements client:load />
+
+    <!-- Hero with Navigation -->
+    <HeroNavBar client:load />
+
+    <!-- Scrolling Keywords Marquee -->
+    <MarqueeBanner client:load />
+
+    <!-- Trusted By Logos with Stats -->
+    <ClientLogos client:load />
+
+    <!-- 3 Pillars: Trust, Systems, Sustainability -->
+    <PillarsSection client:load />
+
+    <!-- Why LeadOctave - 6 Feature Cards -->
+    <FeaturesSection client:load />
+
+    <!-- The Promise Section -->
+    <PromiseSection client:load />
+
+    <!-- Video Showcase with Playlist -->
+    <VideoShowcase client:load />
+
+    <!-- 4 Services Grid -->
+    <ServicesGrid client:load />
+
+    <!-- Animated Stats Counter -->
+    <StatsCounter client:load />
+
+    <!-- Founder Preview with Quote -->
+    <FounderTeaser client:load />
+
+    <!-- Testimonials Slider with Auto-play -->
+    <MultiViewTestimonialSlider client:load />
+
+    <!-- FAQ Accordion Section -->
+    <FAQSection client:load />
+
+    <!-- Final CTA with Animations -->
+    <ClosingCTA client:load />
+
+    <!-- Premium Footer with Newsletter -->
+    <Footer client:load />
+  </body>
+</html>

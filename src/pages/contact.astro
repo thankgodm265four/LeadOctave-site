@@ -1,0 +1,27 @@
+---
+import ServiceNav from "../components/ServiceNav.jsx";
+import ContactPage from "../components/ContactPage.jsx";
+import Footer from "../components/Footer.jsx";
+import FloatingElements from "../components/FloatingElements.jsx";
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Us | LeadOctave</title>
+        <meta
+            name="description"
+            content="Ready to transform your leadership? Get in touch with LeadOctave and start your journey from chaos to cadence."
+        />
+        <link rel="icon" type="image/png" href="/image/leadoctave-logo.png" />
+    </head>
+    <body class="antialiased">
+        <FloatingElements client:load />
+        <ServiceNav client:load />
+        <ContactPage client:load />
+        <Footer client:load />
+    </body>
+</html>
