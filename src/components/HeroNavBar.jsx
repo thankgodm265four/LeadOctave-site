@@ -67,7 +67,7 @@ export default function HeroNavBar() {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60"></div>
 
       {/* Navigation Bar */}
-      <nav className="fixed top-0 left-0 right-0 z-50">
+      <nav className={`${isScrolled ? 'fixed' : 'absolute'} top-0 left-0 right-0 z-50 transition-all duration-300`}>
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className={`flex justify-between items-center rounded-2xl px-8 py-4 transition-all duration-500 ${isScrolled
             ? 'bg-white/90 backdrop-blur-xl shadow-2xl shadow-black/10'

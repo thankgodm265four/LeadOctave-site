@@ -4,6 +4,35 @@ import { ChevronLeft, ChevronRight, Quote, Star, Play } from 'lucide-react';
 export default function MultiViewTestimonialSlider() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+    const [touchStart, setTouchStart] = useState(null);
+    const [touchEnd, setTouchEnd] = useState(null);
+
+    // Minimum swipe distance (in px)
+    const minSwipeDistance = 50;
+
+    const onTouchStart = (e) => {
+        setTouchEnd(null);
+        setTouchStart(e.targetTouches[0].clientX);
+    };
+
+    const onTouchMove = (e) => {
+        setTouchEnd(e.targetTouches[0].clientX);
+    };
+
+    const onTouchEnd = () => {
+        if (!touchStart || !touchEnd) return;
+
+        const distance = touchStart - touchEnd;
+        const isLeftSwipe = distance > minSwipeDistance;
+        const isRightSwipe = distance < -minSwipeDistance;
+
+        if (isLeftSwipe) {
+            nextSlide();
+        }
+        if (isRightSwipe) {
+            prevSlide();
+        }
+    };
 
     const testimonials = [
         {
@@ -102,8 +131,13 @@ export default function MultiViewTestimonialSlider() {
                 </div>
 
                 {/* Main Testimonial Card */}
-                <div className="relative max-w-4xl mx-auto">
-                    <div className="bg-gradient-to-br from-[#142C4C] to-[#1a3a5c] rounded-3xl p-10 md:p-14 shadow-2xl relative overflow-hidden">
+                <div
+                    className="relative max-w-4xl mx-auto"
+                    onTouchStart={onTouchStart}
+                    onTouchMove={onTouchMove}
+                    onTouchEnd={onTouchEnd}
+                >
+                    <div className="bg-gradient-to-br from-[#142C4C] to-[#1a3a5c] rounded-3xl p-8 md:p-14 shadow-2xl relative overflow-hidden min-h-[400px] flex flex-col justify-center">
                         {/* Quote Icon */}
                         <Quote className="absolute top-8 right-8 w-24 h-24 text-white/5" />
 
@@ -151,15 +185,17 @@ export default function MultiViewTestimonialSlider() {
                     {/* Navigation Arrows */}
                     <button
                         onClick={prevSlide}
-                        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-14 h-14 bg-white rounded-full shadow-xl flex items-center justify-center text-[#142C4C] hover:bg-[#D4A259] hover:text-white transition-all duration-300 hover:scale-110"
+                        className="absolute left-2 md:left-0 top-1/2 -translate-y-1/2 md:-translate-x-1/2 w-10 h-10 md:w-14 md:h-14 bg-white rounded-full shadow-xl flex items-center justify-center text-[#142C4C] hover:bg-[#D4A259] hover:text-white transition-all duration-300 hover:scale-110 z-20"
+                        aria-label="Previous testimonial"
                     >
-                        <ChevronLeft className="w-6 h-6" />
+                        <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
                     </button>
                     <button
                         onClick={nextSlide}
-                        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-14 h-14 bg-white rounded-full shadow-xl flex items-center justify-center text-[#142C4C] hover:bg-[#D4A259] hover:text-white transition-all duration-300 hover:scale-110"
+                        className="absolute right-2 md:right-0 top-1/2 -translate-y-1/2 md:translate-x-1/2 w-10 h-10 md:w-14 md:h-14 bg-white rounded-full shadow-xl flex items-center justify-center text-[#142C4C] hover:bg-[#D4A259] hover:text-white transition-all duration-300 hover:scale-110 z-20"
+                        aria-label="Next testimonial"
                     >
-                        <ChevronRight className="w-6 h-6" />
+                        <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
                     </button>
                 </div>
 
@@ -170,8 +206,8 @@ export default function MultiViewTestimonialSlider() {
                             key={index}
                             onClick={() => goToSlide(index)}
                             className={`relative transition-all duration-300 ${currentIndex === index
-                                    ? 'scale-110'
-                                    : 'opacity-50 hover:opacity-100'
+                                ? 'scale-110'
+                                : 'opacity-50 hover:opacity-100'
                                 }`}
                         >
                             <img
@@ -212,8 +248,8 @@ export default function MultiViewTestimonialSlider() {
                     <button
                         onClick={() => setIsAutoPlaying(!isAutoPlaying)}
                         className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm transition-colors ${isAutoPlaying
-                                ? 'bg-[#D4A259]/10 text-[#D4A259]'
-                                : 'bg-gray-100 text-gray-500'
+                            ? 'bg-[#D4A259]/10 text-[#D4A259]'
+                            : 'bg-gray-100 text-gray-500'
                             }`}
                     >
                         <Play className={`w-4 h-4 ${isAutoPlaying ? 'animate-pulse' : ''}`} fill={isAutoPlaying ? 'currentColor' : 'none'} />
