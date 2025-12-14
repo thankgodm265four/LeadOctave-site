@@ -39,7 +39,7 @@ export default function ServiceNav() {
     return (
         <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
             ? 'bg-white shadow-2xl shadow-black/10'
-            : 'bg-[#132C4A]'
+            : 'bg-[#142C4C]'
             }`}>
             <div className="max-w-7xl mx-auto px-6">
                 <div className="flex justify-between items-center py-4">
@@ -62,10 +62,10 @@ export default function ServiceNav() {
                                 href={link.href}
                                 className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 ${isActive(link.href)
                                     ? isScrolled
-                                        ? 'bg-[#132C4A] text-white shadow-lg'
-                                        : 'bg-white text-[#132C4A] shadow-lg'
+                                        ? 'bg-[#142C4C] text-white shadow-lg'
+                                        : 'bg-white text-[#142C4C] shadow-lg'
                                     : isScrolled
-                                        ? 'text-[#132C4A] hover:bg-gray-200'
+                                        ? 'text-[#142C4C] hover:bg-gray-200'
                                         : 'text-white/90 hover:text-white hover:bg-white/10'
                                     }`}
                             >
@@ -77,7 +77,7 @@ export default function ServiceNav() {
                     {/* Right Side */}
                     <div className="hidden lg:flex items-center gap-4">
                         <button className={`flex items-center gap-2 px-4 py-2.5 rounded-xl transition-all duration-300 ${isScrolled
-                            ? 'text-[#132C4A] hover:bg-gray-100'
+                            ? 'text-[#142C4C] hover:bg-gray-100'
                             : 'text-white/90 hover:text-white hover:bg-white/10'
                             }`}>
                             <Globe className="w-4 h-4" />
@@ -87,13 +87,13 @@ export default function ServiceNav() {
 
                         <a
                             href="/contact"
-                            className="group relative px-7 py-3 bg-gradient-to-r from-[#D4AF37] to-[#c9a430] text-white rounded-xl text-sm font-bold transition-all duration-300 shadow-lg shadow-[#D4AF37]/30 hover:shadow-xl hover:shadow-[#D4AF37]/50 hover:scale-105 overflow-hidden"
+                            className="group relative px-7 py-3 bg-gradient-to-r from-[#D4A259] to-[#c9a430] text-white rounded-xl text-sm font-bold transition-all duration-300 shadow-lg shadow-[#D4A259]/30 hover:shadow-xl hover:shadow-[#D4A259]/50 hover:scale-105 overflow-hidden"
                         >
                             <span className="relative z-10 flex items-center gap-2">
                                 <Sparkles className="w-4 h-4" />
                                 Get Your Octave Score
                             </span>
-                            <div className="absolute inset-0 bg-gradient-to-r from-[#c9a430] to-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div className="absolute inset-0 bg-gradient-to-r from-[#c9a430] to-[#D4A259] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         </a>
                     </div>
 
@@ -104,9 +104,9 @@ export default function ServiceNav() {
                         aria-label="Toggle menu"
                     >
                         {isMenuOpen ? (
-                            <X className={isScrolled ? 'text-[#132C4A]' : 'text-white'} size={28} />
+                            <X className={isScrolled ? 'text-[#142C4C]' : 'text-white'} size={28} />
                         ) : (
-                            <Menu className={isScrolled ? 'text-[#132C4A]' : 'text-white'} size={28} />
+                            <Menu className={isScrolled ? 'text-[#142C4C]' : 'text-white'} size={28} />
                         )}
                     </button>
                 </div>
@@ -121,8 +121,8 @@ export default function ServiceNav() {
                                 key={index}
                                 href={link.href}
                                 className={`px-5 py-4 rounded-xl text-lg font-semibold transition-all duration-300 ${isActive(link.href)
-                                    ? 'bg-[#132C4A] text-white'
-                                    : 'text-[#132C4A] hover:bg-gray-100'
+                                    ? 'bg-[#142C4C] text-white'
+                                    : 'text-[#142C4C] hover:bg-gray-100'
                                     }`}
                                 onClick={() => setIsMenuOpen(false)}
                             >
@@ -131,7 +131,7 @@ export default function ServiceNav() {
                         ))}
                         <a
                             href="/contact"
-                            className="mt-4 text-center bg-gradient-to-r from-[#D4AF37] to-[#c9a430] text-white py-4 rounded-xl font-bold shadow-lg"
+                            className="mt-4 text-center bg-gradient-to-r from-[#D4A259] to-[#c9a430] text-white py-4 rounded-xl font-bold shadow-lg"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Get Your Octave Score

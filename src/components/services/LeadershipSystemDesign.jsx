@@ -26,7 +26,7 @@ export default function LeadershipSystemDesign() {
     return (
         <div className="min-h-screen bg-white">
             {/* Hero Section */}
-            <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 px-6 bg-gradient-to-br from-[#0a1628] via-[#132C4A] to-[#1a3a5c] overflow-hidden">
+            <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 px-6 bg-gradient-to-br from-[#0a1628] via-[#142C4C] to-[#1a3a5c] overflow-hidden">
                 {/* Animated Background */}
                 <div className="absolute inset-0">
                     <div className="absolute top-20 right-20 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-float"></div>
@@ -92,7 +92,7 @@ export default function LeadershipSystemDesign() {
                                 <div>
                                     <div className="flex items-center gap-1 mb-1">
                                         {[1, 2, 3, 4, 5].map((i) => (
-                                            <Star key={i} className="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]" />
+                                            <Star key={i} className="w-4 h-4 text-[#D4A259] fill-[#D4A259]" />
                                         ))}
                                     </div>
                                     <p className="text-sm text-gray-400">Trusted by 100+ organizations</p>
@@ -113,7 +113,7 @@ export default function LeadershipSystemDesign() {
                                         <p className="text-sm text-gray-400">Execution Speed</p>
                                     </div>
                                     <div className="bg-white/10 rounded-2xl p-6 text-center">
-                                        <p className="text-4xl font-bold text-[#D4AF37] mb-2">85%</p>
+                                        <p className="text-4xl font-bold text-[#D4A259] mb-2">85%</p>
                                         <p className="text-sm text-gray-400">Conflict Reduction</p>
                                     </div>
                                     <div className="bg-white/10 rounded-2xl p-6 text-center">
@@ -143,7 +143,7 @@ export default function LeadershipSystemDesign() {
                                 <AlertTriangle className="w-4 h-4 text-red-500" />
                                 <span className="text-sm font-bold text-red-600 uppercase tracking-wider">The Problem</span>
                             </div>
-                            <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#132C4A] mb-6 leading-tight">
+                            <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#142C4C] mb-6 leading-tight">
                                 Leadership Without a System is <span className="text-red-500">Chaos</span>
                             </h2>
                             <p className="text-lg text-gray-600 leading-relaxed mb-8">
@@ -165,7 +165,7 @@ export default function LeadershipSystemDesign() {
 
                         <div className="lg:w-1/2">
                             <div className="bg-white p-10 rounded-3xl shadow-2xl border border-gray-100">
-                                <h3 className="text-lg font-bold text-[#132C4A] mb-6">Common Symptoms</h3>
+                                <h3 className="text-lg font-bold text-[#142C4C] mb-6">Common Symptoms</h3>
                                 <div className="space-y-5">
                                     {[
                                         "Unclear responsibilities and role confusion",
@@ -198,7 +198,7 @@ export default function LeadershipSystemDesign() {
                             <Sparkles className="w-4 h-4 text-blue-600" />
                             <span className="text-sm font-bold text-blue-600 uppercase tracking-wider">Our Solution</span>
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#132C4A] mb-6">
+                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#142C4C] mb-6">
                             Custom Leadership Systems <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-600">Designed for You</span>
                         </h2>
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -216,7 +216,7 @@ export default function LeadershipSystemDesign() {
                                     <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                                         <span className="text-2xl font-bold text-white">0{index + 1}</span>
                                     </div>
-                                    <h3 className="text-xl font-bold text-[#132C4A] mb-3">{solution.title}</h3>
+                                    <h3 className="text-xl font-bold text-[#142C4C] mb-3">{solution.title}</h3>
                                     <p className="text-gray-600">{solution.desc}</p>
                                 </div>
                             </div>
@@ -233,7 +233,7 @@ export default function LeadershipSystemDesign() {
                             <Target className="w-4 h-4 text-emerald-600" />
                             <span className="text-sm font-bold text-emerald-600 uppercase tracking-wider">The Outcome</span>
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#132C4A] mb-6">
+                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#142C4C] mb-6">
                             What You'll <span className="text-emerald-500">Achieve</span>
                         </h2>
                     </div>
@@ -244,7 +244,7 @@ export default function LeadershipSystemDesign() {
                                 <div className="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">
                                     <CheckCircle className="w-8 h-8 text-emerald-500" />
                                 </div>
-                                <h3 className="text-xl font-bold text-[#132C4A] mb-3">{outcome.title}</h3>
+                                <h3 className="text-xl font-bold text-[#142C4C] mb-3">{outcome.title}</h3>
                                 <p className="text-gray-600">{outcome.desc}</p>
                             </div>
                         ))}
@@ -275,7 +275,7 @@ export default function LeadershipSystemDesign() {
                     </p>
                     <a
                         href="#contact"
-                        className="group inline-flex items-center gap-4 px-14 py-6 bg-white text-[#132C4A] font-bold text-xl rounded-2xl transition-all duration-300 shadow-2xl hover:shadow-white/25 transform hover:-translate-y-1 hover:scale-105"
+                        className="group inline-flex items-center gap-4 px-14 py-6 bg-white text-[#142C4C] font-bold text-xl rounded-2xl transition-all duration-300 shadow-2xl hover:shadow-white/25 transform hover:-translate-y-1 hover:scale-105"
                     >
                         Request Your Leadership System Pilot
                         <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />

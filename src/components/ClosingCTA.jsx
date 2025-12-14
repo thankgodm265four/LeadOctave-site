@@ -5,7 +5,7 @@ export default function ClosingCTA() {
     return (
         <div className="w-full relative overflow-hidden">
             {/* Gradient Background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37] via-[#c9a430] to-[#b8962e]"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-[#D4A259] via-[#c9a430] to-[#b8962e]"></div>
 
             {/* Animated Pattern */}
             <div className="absolute inset-0 opacity-20">
@@ -34,7 +34,7 @@ export default function ClosingCTA() {
             {/* Floating Orbs */}
             <div className="absolute top-10 left-10 w-40 h-40 bg-white/10 rounded-full blur-2xl animate-float"></div>
             <div className="absolute bottom-10 right-10 w-60 h-60 bg-white/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
-            <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-[#132C4A]/10 rounded-full blur-2xl animate-float" style={{ animationDelay: '4s' }}></div>
+            <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-[#142C4C]/10 rounded-full blur-2xl animate-float" style={{ animationDelay: '4s' }}></div>
 
             <div className="relative z-10 py-32 md:py-40 px-6">
                 <div className="max-w-5xl mx-auto text-center">
@@ -47,7 +47,7 @@ export default function ClosingCTA() {
 
                     <h2 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-10 leading-tight drop-shadow-lg">
                         Your Leadership <br />
-                        <span className="text-[#132C4A]">Deserves a System</span>
+                        <span className="text-[#142C4C]">Deserves a System</span>
                     </h2>
 
                     <p className="text-xl text-white/90 mb-14 max-w-2xl mx-auto leading-relaxed">
@@ -56,11 +56,11 @@ export default function ClosingCTA() {
 
                     <a
                         href="/contact"
-                        className="group inline-flex items-center gap-4 bg-white text-[#132C4A] px-14 py-6 rounded-2xl font-bold text-xl transition-all duration-300 shadow-2xl hover:shadow-white/25 transform hover:-translate-y-1 hover:scale-105 relative overflow-hidden"
+                        className="group inline-flex items-center gap-4 bg-white text-[#142C4C] px-14 py-6 rounded-2xl font-bold text-xl transition-all duration-300 shadow-2xl hover:shadow-white/25 transform hover:-translate-y-1 hover:scale-105 relative overflow-hidden"
                     >
                         <span className="relative z-10">Begin Your Clarity Path</span>
                         <ArrowRight className="w-6 h-6 relative z-10 group-hover:translate-x-2 transition-transform" />
-                        <div className="absolute inset-0 bg-gradient-to-r from-[#132C4A] to-[#1a3a5c] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute inset-0 bg-gradient-to-r from-[#142C4C] to-[#1a3a5c] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         <span className="absolute inset-0 z-20 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 text-white font-bold transition-opacity duration-300">
                             Begin Your Clarity Path
                             <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />

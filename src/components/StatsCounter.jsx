@@ -18,7 +18,7 @@ export default function StatsCounter() {
             value: 93,
             suffix: "%",
             label: "Success Rate",
-            color: "from-[#D4AF37] to-amber-500"
+            color: "from-[#D4A259] to-amber-500"
         },
         {
             icon: <Globe className="w-8 h-8" />,
@@ -56,11 +56,11 @@ export default function StatsCounter() {
     return (
         <section
             ref={sectionRef}
-            className="py-24 px-6 bg-[#132C4A] relative overflow-hidden"
+            className="py-24 px-6 bg-[#142C4C] relative overflow-hidden"
         >
             {/* Background Elements */}
             <div className="absolute inset-0">
-                <div className="absolute top-20 right-20 w-96 h-96 bg-[#D4AF37]/10 rounded-full blur-3xl"></div>
+                <div className="absolute top-20 right-20 w-96 h-96 bg-[#D4A259]/10 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-20 left-20 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
 
                 {/* Grid Pattern */}

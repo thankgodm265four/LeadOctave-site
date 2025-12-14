@@ -16,7 +16,7 @@ export default function QuoteSection() {
 
                     {/* Quote Text */}
                     <blockquote className="text-center px-8 md:px-16">
-                        <p className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#132C4A] leading-tight">
+                        <p className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#142C4C] leading-tight">
                             We don't just navigate business complexities; we architect transformative solutions. Our commitment goes beyond consultancy
                         </p>
                     </blockquote>

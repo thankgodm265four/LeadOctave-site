@@ -82,19 +82,19 @@ export default function MultiViewTestimonialSlider() {
         <section className="py-24 px-6 bg-white relative overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-20 right-20 w-96 h-96 bg-[#D4AF37]/5 rounded-full blur-3xl"></div>
+                <div className="absolute top-20 right-20 w-96 h-96 bg-[#D4A259]/5 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-20 left-20 w-72 h-72 bg-blue-500/5 rounded-full blur-3xl"></div>
             </div>
 
             <div className="max-w-7xl mx-auto relative z-10">
                 {/* Section Header */}
                 <div className="text-center mb-16">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#D4AF37]/10 rounded-full mb-6">
-                        <Quote className="w-4 h-4 text-[#D4AF37]" />
-                        <span className="text-sm font-bold text-[#D4AF37] uppercase tracking-wider">Testimonials</span>
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#D4A259]/10 rounded-full mb-6">
+                        <Quote className="w-4 h-4 text-[#D4A259]" />
+                        <span className="text-sm font-bold text-[#D4A259] uppercase tracking-wider">Testimonials</span>
                     </div>
-                    <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#132C4A] mb-6">
-                        What Leaders <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-amber-500">Say</span>
+                    <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#142C4C] mb-6">
+                        What Leaders <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4A259] to-amber-500">Say</span>
                     </h2>
                     <p className="text-gray-600 text-lg max-w-2xl mx-auto">
                         Real results from real leaders who have transformed their organizations with LeadOctave.
@@ -103,12 +103,12 @@ export default function MultiViewTestimonialSlider() {
 
                 {/* Main Testimonial Card */}
                 <div className="relative max-w-4xl mx-auto">
-                    <div className="bg-gradient-to-br from-[#132C4A] to-[#1a3a5c] rounded-3xl p-10 md:p-14 shadow-2xl relative overflow-hidden">
+                    <div className="bg-gradient-to-br from-[#142C4C] to-[#1a3a5c] rounded-3xl p-10 md:p-14 shadow-2xl relative overflow-hidden">
                         {/* Quote Icon */}
                         <Quote className="absolute top-8 right-8 w-24 h-24 text-white/5" />
 
                         {/* Result Badge */}
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#D4AF37] rounded-full mb-8">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#D4A259] rounded-full mb-8">
                             <Star className="w-4 h-4 text-white" fill="white" />
                             <span className="text-sm font-bold text-white">{testimonials[currentIndex].result}</span>
                         </div>
@@ -124,9 +124,9 @@ export default function MultiViewTestimonialSlider() {
                                 <img
                                     src={testimonials[currentIndex].image}
                                     alt={testimonials[currentIndex].author}
-                                    className="w-16 h-16 rounded-full object-cover border-2 border-[#D4AF37]"
+                                    className="w-16 h-16 rounded-full object-cover border-2 border-[#D4A259]"
                                 />
-                                <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-[#D4AF37] rounded-full flex items-center justify-center">
+                                <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-[#D4A259] rounded-full flex items-center justify-center">
                                     <Star className="w-3 h-3 text-white" fill="white" />
                                 </div>
                             </div>
@@ -141,8 +141,8 @@ export default function MultiViewTestimonialSlider() {
                             {[1, 2, 3, 4, 5].map((star) => (
                                 <Star
                                     key={star}
-                                    className="w-5 h-5 text-[#D4AF37]"
-                                    fill="#D4AF37"
+                                    className="w-5 h-5 text-[#D4A259]"
+                                    fill="#D4A259"
                                 />
                             ))}
                         </div>
@@ -151,13 +151,13 @@ export default function MultiViewTestimonialSlider() {
                     {/* Navigation Arrows */}
                     <button
                         onClick={prevSlide}
-                        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-14 h-14 bg-white rounded-full shadow-xl flex items-center justify-center text-[#132C4A] hover:bg-[#D4AF37] hover:text-white transition-all duration-300 hover:scale-110"
+                        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-14 h-14 bg-white rounded-full shadow-xl flex items-center justify-center text-[#142C4C] hover:bg-[#D4A259] hover:text-white transition-all duration-300 hover:scale-110"
                     >
                         <ChevronLeft className="w-6 h-6" />
                     </button>
                     <button
                         onClick={nextSlide}
-                        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-14 h-14 bg-white rounded-full shadow-xl flex items-center justify-center text-[#132C4A] hover:bg-[#D4AF37] hover:text-white transition-all duration-300 hover:scale-110"
+                        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-14 h-14 bg-white rounded-full shadow-xl flex items-center justify-center text-[#142C4C] hover:bg-[#D4A259] hover:text-white transition-all duration-300 hover:scale-110"
                     >
                         <ChevronRight className="w-6 h-6" />
                     </button>
@@ -177,11 +177,11 @@ export default function MultiViewTestimonialSlider() {
                             <img
                                 src={testimonial.image}
                                 alt={testimonial.author}
-                                className={`w-12 h-12 rounded-full object-cover border-2 transition-colors ${currentIndex === index ? 'border-[#D4AF37]' : 'border-gray-200'
+                                className={`w-12 h-12 rounded-full object-cover border-2 transition-colors ${currentIndex === index ? 'border-[#D4A259]' : 'border-gray-200'
                                     }`}
                             />
                             {currentIndex === index && (
-                                <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-[#D4AF37] rounded-full"></div>
+                                <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-[#D4A259] rounded-full"></div>
                             )}
                         </button>
                     ))}
@@ -197,7 +197,7 @@ export default function MultiViewTestimonialSlider() {
                             style={{ width: currentIndex === index ? '48px' : '16px' }}
                         >
                             <div
-                                className={`h-full bg-[#D4AF37] transition-all duration-300 ${currentIndex === index ? 'w-full' : 'w-0'
+                                className={`h-full bg-[#D4A259] transition-all duration-300 ${currentIndex === index ? 'w-full' : 'w-0'
                                     }`}
                                 style={{
                                     animation: currentIndex === index && isAutoPlaying ? 'progress 6s linear' : 'none'
@@ -212,7 +212,7 @@ export default function MultiViewTestimonialSlider() {
                     <button
                         onClick={() => setIsAutoPlaying(!isAutoPlaying)}
                         className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm transition-colors ${isAutoPlaying
-                                ? 'bg-[#D4AF37]/10 text-[#D4AF37]'
+                                ? 'bg-[#D4A259]/10 text-[#D4A259]'
                                 : 'bg-gray-100 text-gray-500'
                             }`}
                     >

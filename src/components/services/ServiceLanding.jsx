@@ -30,7 +30,7 @@ export default function ServiceLanding() {
             icon: <BookOpen className="w-8 h-8" />,
             link: "/services/training",
             cta: "Book Training",
-            gradient: "from-[#D4AF37] to-amber-500",
+            gradient: "from-[#D4A259] to-amber-500",
             bgImage: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=600&fit=crop&q=80"
         },
         {
@@ -55,11 +55,11 @@ export default function ServiceLanding() {
     return (
         <div className="min-h-screen bg-white">
             {/* Hero Section */}
-            <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 px-6 bg-gradient-to-br from-[#0a1628] via-[#132C4A] to-[#1a3a5c] overflow-hidden">
+            <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 px-6 bg-gradient-to-br from-[#0a1628] via-[#142C4C] to-[#1a3a5c] overflow-hidden">
                 {/* Animated Background */}
                 <div className="absolute inset-0">
                     {/* Gradient Orbs */}
-                    <div className="absolute top-20 right-20 w-96 h-96 bg-[#D4AF37]/20 rounded-full blur-3xl animate-float"></div>
+                    <div className="absolute top-20 right-20 w-96 h-96 bg-[#D4A259]/20 rounded-full blur-3xl animate-float"></div>
                     <div className="absolute bottom-20 left-20 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
                     <div className="absolute top-1/2 left-1/2 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
 
@@ -90,7 +90,7 @@ export default function ServiceLanding() {
                         <div className="flex -space-x-1">
                             <div className="w-6 h-6 rounded-full bg-blue-500 border-2 border-white/20"></div>
                             <div className="w-6 h-6 rounded-full bg-emerald-500 border-2 border-white/20"></div>
-                            <div className="w-6 h-6 rounded-full bg-[#D4AF37] border-2 border-white/20"></div>
+                            <div className="w-6 h-6 rounded-full bg-[#D4A259] border-2 border-white/20"></div>
                             <div className="w-6 h-6 rounded-full bg-purple-500 border-2 border-white/20"></div>
                         </div>
                         <span className="text-sm text-white/90 font-semibold">4 Transformative Services</span>
@@ -99,22 +99,22 @@ export default function ServiceLanding() {
                     <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white leading-[1.05] mb-8 animate-fadeIn" style={{ animationDelay: '0.2s' }}>
                         How We Transform <br />
                         <span className="relative inline-block">
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-[#e8c547] to-[#D4AF37] animate-shimmer bg-[length:200%_100%]">Leadership</span>
-                            <svg className="absolute -bottom-2 left-0 w-full h-3 text-[#D4AF37]/30" viewBox="0 0 200 12" preserveAspectRatio="none">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4A259] via-[#e8c547] to-[#D4A259] animate-shimmer bg-[length:200%_100%]">Leadership</span>
+                            <svg className="absolute -bottom-2 left-0 w-full h-3 text-[#D4A259]/30" viewBox="0 0 200 12" preserveAspectRatio="none">
                                 <path d="M0,6 Q50,0 100,6 T200,6" stroke="currentColor" strokeWidth="3" fill="none" />
                             </svg>
                         </span>
                     </h1>
 
                     <p className="text-xl md:text-2xl text-gray-300 mb-14 max-w-3xl mx-auto leading-relaxed animate-fadeIn" style={{ animationDelay: '0.4s' }}>
-                        Comprehensive solutions designed to move your organization from <span className="text-white font-semibold">friction to flow</span>, building leaders who create <span className="text-[#D4AF37] font-semibold">lasting impact</span>.
+                        Comprehensive solutions designed to move your organization from <span className="text-white font-semibold">friction to flow</span>, building leaders who create <span className="text-[#D4A259] font-semibold">lasting impact</span>.
                     </p>
 
                     {/* Stats Row */}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto animate-fadeIn" style={{ animationDelay: '0.6s' }}>
                         {stats.map((stat, index) => (
                             <div key={index} className="text-center">
-                                <p className="text-4xl md:text-5xl font-bold text-[#D4AF37] mb-2">{stat.number}</p>
+                                <p className="text-4xl md:text-5xl font-bold text-[#D4A259] mb-2">{stat.number}</p>
                                 <p className="text-sm text-gray-400">{stat.label}</p>
                             </div>
                         ))}
@@ -132,17 +132,17 @@ export default function ServiceLanding() {
             {/* Services Section */}
             <section className="py-24 px-6 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
                 {/* Background Decorations */}
-                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-[#D4AF37]/5 to-transparent rounded-full blur-3xl"></div>
-                <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-[#132C4A]/5 to-transparent rounded-full blur-3xl"></div>
+                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-[#D4A259]/5 to-transparent rounded-full blur-3xl"></div>
+                <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-[#142C4C]/5 to-transparent rounded-full blur-3xl"></div>
 
                 <div className="max-w-7xl mx-auto relative z-10">
                     {/* Section Header */}
                     <div className="text-center mb-20">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#132C4A]/5 rounded-full mb-6">
-                            <Zap className="w-4 h-4 text-[#D4AF37]" />
-                            <span className="text-sm font-bold text-[#132C4A] uppercase tracking-wider">Choose Your Path</span>
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#142C4C]/5 rounded-full mb-6">
+                            <Zap className="w-4 h-4 text-[#D4A259]" />
+                            <span className="text-sm font-bold text-[#142C4C] uppercase tracking-wider">Choose Your Path</span>
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#132C4A] mb-6">
+                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#142C4C] mb-6">
                             Select the Service That Fits
                         </h2>
                         <p className="text-gray-600 text-lg max-w-2xl mx-auto">
@@ -183,7 +183,7 @@ export default function ServiceLanding() {
                                     </div>
 
                                     {/* Headline */}
-                                    <h3 className="text-2xl md:text-3xl font-bold text-[#132C4A] mb-4 font-serif group-hover:text-[#132C4A] transition-colors leading-tight">
+                                    <h3 className="text-2xl md:text-3xl font-bold text-[#142C4C] mb-4 font-serif group-hover:text-[#142C4C] transition-colors leading-tight">
                                         {service.headline}
                                     </h3>
 
@@ -199,7 +199,7 @@ export default function ServiceLanding() {
                                             <span>Custom Tailored</span>
                                         </div>
                                         <div className="flex items-center gap-2">
-                                            <Star className="w-4 h-4 text-[#D4AF37]" />
+                                            <Star className="w-4 h-4 text-[#D4A259]" />
                                             <span>Premium Support</span>
                                         </div>
                                     </div>
@@ -208,7 +208,7 @@ export default function ServiceLanding() {
                                     <div className="flex flex-wrap gap-4">
                                         <a
                                             href={service.link}
-                                            className="inline-flex items-center gap-2 text-[#132C4A] font-bold group-hover:text-[#D4AF37] transition-colors"
+                                            className="inline-flex items-center gap-2 text-[#142C4C] font-bold group-hover:text-[#D4A259] transition-colors"
                                         >
                                             Learn More
                                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -229,7 +229,7 @@ export default function ServiceLanding() {
             </section>
 
             {/* Process Section */}
-            <section className="py-24 px-6 bg-[#132C4A] relative overflow-hidden">
+            <section className="py-24 px-6 bg-[#142C4C] relative overflow-hidden">
                 {/* Background */}
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute inset-0" style={{
@@ -240,7 +240,7 @@ export default function ServiceLanding() {
 
                 <div className="max-w-5xl mx-auto relative z-10 text-center">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full mb-8">
-                        <Sparkles className="w-4 h-4 text-[#D4AF37]" />
+                        <Sparkles className="w-4 h-4 text-[#D4A259]" />
                         <span className="text-sm font-bold text-white/90 uppercase tracking-wider">Our Process</span>
                     </div>
 
@@ -257,12 +257,12 @@ export default function ServiceLanding() {
                         ].map((item, index) => (
                             <div key={index} className="relative group">
                                 <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300">
-                                    <span className="text-5xl font-bold text-[#D4AF37]/30 mb-4 block">{item.step}</span>
+                                    <span className="text-5xl font-bold text-[#D4A259]/30 mb-4 block">{item.step}</span>
                                     <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
                                     <p className="text-gray-400 text-sm">{item.desc}</p>
                                 </div>
                                 {index < 3 && (
-                                    <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-[2px] bg-gradient-to-r from-[#D4AF37] to-transparent"></div>
+                                    <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-[2px] bg-gradient-to-r from-[#D4A259] to-transparent"></div>
                                 )}
                             </div>
                         ))}
@@ -271,7 +271,7 @@ export default function ServiceLanding() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-32 px-6 bg-gradient-to-br from-[#D4AF37] via-[#c9a430] to-[#b8962e] relative overflow-hidden">
+            <section className="py-32 px-6 bg-gradient-to-br from-[#D4A259] via-[#c9a430] to-[#b8962e] relative overflow-hidden">
                 {/* Animated Background */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="absolute top-10 left-10 w-40 h-40 bg-white/10 rounded-full blur-2xl animate-float"></div>
@@ -301,7 +301,7 @@ export default function ServiceLanding() {
 
                     <a
                         href="#contact"
-                        className="group inline-flex items-center gap-4 px-14 py-6 bg-white text-[#132C4A] font-bold text-xl rounded-2xl transition-all duration-300 shadow-2xl hover:shadow-white/25 transform hover:-translate-y-1 hover:scale-105"
+                        className="group inline-flex items-center gap-4 px-14 py-6 bg-white text-[#142C4C] font-bold text-xl rounded-2xl transition-all duration-300 shadow-2xl hover:shadow-white/25 transform hover:-translate-y-1 hover:scale-105"
                     >
                         Start Your Octave Diagnostic
                         <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />

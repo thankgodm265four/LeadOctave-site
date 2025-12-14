@@ -76,7 +76,7 @@ export default function CursorEffect() {
                     transform: 'translate(-50%, -50%)'
                 }}
             >
-                <div className={`w-10 h-10 border border-[#D4AF37]/50 rounded-full transition-all duration-300 ${isPointer ? 'scale-150 border-[#D4AF37]' : ''}`}></div>
+                <div className={`w-10 h-10 border border-[#D4A259]/50 rounded-full transition-all duration-300 ${isPointer ? 'scale-150 border-[#D4A259]' : ''}`}></div>
             </div>
 
             {/* Hide default cursor */}

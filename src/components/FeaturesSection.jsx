@@ -29,7 +29,7 @@ export default function FeaturesSection() {
             icon: <Clock className="w-6 h-6" />,
             title: "Predictable Rhythm",
             description: "Consistent processes and cadences for meetings, feedback, and execution.",
-            color: "from-[#D4AF37] to-amber-500"
+            color: "from-[#D4A259] to-amber-500"
         },
         {
             icon: <Users className="w-6 h-6" />,
@@ -55,19 +55,19 @@ export default function FeaturesSection() {
         <section className="py-24 px-6 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-0 left-1/2 w-[800px] h-[800px] -translate-x-1/2 -translate-y-1/2 bg-gradient-to-br from-[#D4AF37]/5 to-transparent rounded-full blur-3xl"></div>
+                <div className="absolute top-0 left-1/2 w-[800px] h-[800px] -translate-x-1/2 -translate-y-1/2 bg-gradient-to-br from-[#D4A259]/5 to-transparent rounded-full blur-3xl"></div>
             </div>
 
             <div className="max-w-7xl mx-auto relative z-10">
                 {/* Section Header */}
                 <div className="text-center mb-20">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#D4AF37]/10 rounded-full mb-6">
-                        <Sparkles className="w-4 h-4 text-[#D4AF37]" />
-                        <span className="text-sm font-bold text-[#D4AF37] uppercase tracking-wider">Why LeadOctave</span>
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#D4A259]/10 rounded-full mb-6">
+                        <Sparkles className="w-4 h-4 text-[#D4A259]" />
+                        <span className="text-sm font-bold text-[#D4A259] uppercase tracking-wider">Why LeadOctave</span>
                     </div>
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#132C4A] mb-6">
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#142C4C] mb-6">
                         The Leadership System <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-amber-500">Advantage</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4A259] to-amber-500">Advantage</span>
                     </h2>
                     <p className="text-gray-600 text-lg max-w-2xl mx-auto">
                         Transform your organization with frameworks designed for lasting impact and measurable results.
@@ -90,7 +90,7 @@ export default function FeaturesSection() {
                             </div>
 
                             {/* Content */}
-                            <h3 className="text-xl font-bold text-[#132C4A] mb-3 group-hover:text-[#D4AF37] transition-colors">
+                            <h3 className="text-xl font-bold text-[#142C4C] mb-3 group-hover:text-[#D4A259] transition-colors">
                                 {feature.title}
                             </h3>
                             <p className="text-gray-600 leading-relaxed mb-4">
@@ -110,7 +110,7 @@ export default function FeaturesSection() {
                 <div className="text-center mt-16">
                     <a
                         href="/model"
-                        className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#132C4A] to-[#1a3a5c] text-white font-bold text-lg rounded-2xl transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"
+                        className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#142C4C] to-[#1a3a5c] text-white font-bold text-lg rounded-2xl transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"
                     >
                         Explore the Octave Model™
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

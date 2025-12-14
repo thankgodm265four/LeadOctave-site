@@ -28,10 +28,10 @@ export default function StrategyProcessSection() {
 
                     {/* Left Column - Headline */}
                     <div className="flex flex-col justify-start">
-                        <p className="text-xs uppercase tracking-widest text-[#D4AF37] mb-4 font-bold">
+                        <p className="text-xs uppercase tracking-widest text-[#D4A259] mb-4 font-bold">
                             About LeadOctave
                         </p>
-                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#132C4A] leading-tight">
+                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#142C4C] leading-tight">
                             Achieving growth relies on taking straightforward & automated measures.
                         </h2>
                     </div>
@@ -60,17 +60,17 @@ export default function StrategyProcessSection() {
                             />
 
                             {/* Gradient Overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent group-hover:from-[#132C4A]/90 transition-all duration-500"></div>
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent group-hover:from-[#142C4C]/90 transition-all duration-500"></div>
 
                             {/* Card Content (Bottom Left) */}
                             <div className="absolute bottom-0 left-0 right-0 p-6 flex items-center gap-3 transform group-hover:translate-x-1 transition-transform duration-300">
                                 {/* Step Indicator Box */}
-                                <div className="bg-white text-black w-8 h-8 flex items-center justify-center font-bold font-serif text-sm flex-shrink-0 group-hover:bg-[#D4AF37] group-hover:scale-110 transition-all duration-300">
+                                <div className="bg-white text-black w-8 h-8 flex items-center justify-center font-bold font-serif text-sm flex-shrink-0 group-hover:bg-[#D4A259] group-hover:scale-110 transition-all duration-300">
                                     {card.letter}
                                 </div>
 
                                 {/* Label Text */}
-                                <h3 className="text-white font-bold text-lg leading-tight group-hover:text-[#D4AF37] transition-colors duration-300">
+                                <h3 className="text-white font-bold text-lg leading-tight group-hover:text-[#D4A259] transition-colors duration-300">
                                     {card.label}
                                 </h3>
                             </div>
