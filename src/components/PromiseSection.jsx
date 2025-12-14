@@ -51,7 +51,7 @@ export default function PromiseSection() {
                 </p>
 
                 <a
-                    href="#diagnostic"
+                    href="/contact"
                     className="group inline-flex items-center gap-3 bg-gradient-to-r from-[#D4A259] to-[#c9a430] text-white px-12 py-6 rounded-2xl font-bold text-lg transition-all duration-300 shadow-2xl shadow-[#D4A259]/25 hover:shadow-[#D4A259]/50 hover:scale-105 relative overflow-hidden"
                 >
                     <span className="relative z-10">Start the Octave Diagnostic</span>
