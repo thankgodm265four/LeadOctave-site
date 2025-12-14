@@ -1,10 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Globe, ArrowRight, Sparkles } from 'lucide-react';
+import { Menu, X, Globe, ArrowRight, Sparkles, ChevronDown, Check } from 'lucide-react';
+import { useLanguage } from '../lib/i18n';
 
 export default function HeroNavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activePath, setActivePath] = useState('/');
+  const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
+
+  const { language, setLanguage, t } = useLanguage();
+
+  const languages = [
+    { code: 'en', label: 'English', flag: '🇬🇧' },
+    { code: 'es', label: 'Español', flag: '🇪🇸' },
+    { code: 'fr', label: 'Français', flag: '🇫🇷' },
+    { code: 'de', label: 'Deutsch', flag: '🇩🇪' }
+  ];
+
+  const currentLang = languages.find(l => l.code === language) || languages[0];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,12 +41,12 @@ export default function HeroNavBar() {
   };
 
   const navLinks = [
-    { label: 'Home', href: '/' },
-    { label: 'Service', href: '/service' },
-    { label: 'Model', href: '/model' },
-    { label: 'Founder', href: '/founder' },
-    { label: 'About', href: '/about' },
-    { label: 'Contact', href: '/contact' }
+    { label: t.nav.home, href: '/' },
+    { label: t.nav.service, href: '/service' },
+    { label: t.nav.model, href: '/model' },
+    { label: t.nav.founder, href: '/founder' },
+    { label: t.nav.about, href: '/about' },
+    { label: t.nav.contact, href: '/contact' }
   ];
 
   return (
@@ -110,13 +123,42 @@ export default function HeroNavBar() {
             {/* Right Side - Language & CTA */}
             <div className="hidden lg:flex items-center gap-4">
               {/* Language Selector */}
-              <button className={`flex items-center gap-2 px-4 py-2.5 rounded-xl transition-all duration-300 ${isScrolled
-                ? 'text-[#142C4C] hover:bg-gray-100'
-                : 'text-white/80 hover:text-white hover:bg-white/10'
-                }`}>
-                <Globe className="w-4 h-4" />
-                <span className="text-sm font-medium">EN</span>
-              </button>
+              <div className="relative">
+                <button
+                  onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
+                  className={`flex items-center gap-2 px-4 py-2.5 rounded-xl transition-all duration-300 ${isScrolled
+                    ? 'text-[#142C4C] hover:bg-gray-100'
+                    : 'text-white/80 hover:text-white hover:bg-white/10'
+                    }`}
+                >
+                  <Globe className="w-4 h-4" />
+                  <span className="text-sm font-medium uppercase">{currentLang.code}</span>
+                  <ChevronDown className={`w-3 h-3 transition-transform ${isLangMenuOpen ? 'rotate-180' : ''}`} />
+                </button>
+
+                {/* Dropdown Menu */}
+                {isLangMenuOpen && (
+                  <div className="absolute top-full right-0 mt-2 w-40 bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden animate-slideDown">
+                    {languages.map((lang) => (
+                      <button
+                        key={lang.code}
+                        onClick={() => {
+                          setLanguage(lang.code);
+                          setIsLangMenuOpen(false);
+                        }}
+                        className={`w-full flex items-center justify-between px-4 py-3 text-sm hover:bg-gray-50 transition-colors ${language === lang.code ? 'text-[#D4A259] font-bold bg-[#D4A259]/5' : 'text-gray-700'
+                          }`}
+                      >
+                        <span className="flex items-center gap-2">
+                          <span>{lang.flag}</span>
+                          <span>{lang.label}</span>
+                        </span>
+                        {language === lang.code && <Check className="w-3 h-3" />}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
 
               {/* Primary CTA Button */}
               <a
@@ -125,7 +167,7 @@ export default function HeroNavBar() {
               >
                 <span className="relative z-10 flex items-center gap-2">
                   <Sparkles className="w-4 h-4" />
-                  Get Your Octave Score
+                  {t.nav.getScore}
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#c9a430] to-[#D4A259] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
@@ -163,12 +205,32 @@ export default function HeroNavBar() {
                   {link.label}
                 </a>
               ))}
+
+              {/* Mobile Language Selector */}
+              <div className="px-5 py-4 border-t border-gray-100 mt-2">
+                <p className="text-sm text-gray-500 mb-3">Select Language</p>
+                <div className="flex gap-2">
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => setLanguage(lang.code)}
+                      className={`px-3 py-2 rounded-lg text-sm border ${language === lang.code
+                          ? 'bg-[#D4A259] text-white border-[#D4A259]'
+                          : 'bg-white text-gray-600 border-gray-200'
+                        }`}
+                    >
+                      {lang.code.toUpperCase()}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
               <a
                 href="/contact"
                 className="mt-4 text-center bg-gradient-to-r from-[#D4A259] to-[#c9a430] text-white py-4 rounded-xl font-bold shadow-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Get Your Octave Score
+                {t.nav.getScore}
               </a>
             </div>
           </div>
@@ -181,18 +243,18 @@ export default function HeroNavBar() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8 animate-fadeIn">
             <Sparkles className="w-4 h-4 text-[#D4A259]" />
-            <span className="text-sm text-white/90 font-medium">Transform Your Leadership Today</span>
+            <span className="text-sm text-white/90 font-medium">{t.hero.badge}</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white leading-[1.05] mb-8 animate-fadeIn" style={{ animationDelay: '0.2s' }}>
-            Build Leadership That <br />
+            {t.hero.title} <br />
             <span className="relative">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4A259] via-[#e8c547] to-[#D4A259] animate-shimmer bg-[length:200%_100%]">Lasts Beyond You</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4A259] via-[#e8c547] to-[#D4A259] animate-shimmer bg-[length:200%_100%]">{t.hero.titleHighlight}</span>
             </span>
           </h1>
 
           <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl leading-relaxed animate-fadeIn" style={{ animationDelay: '0.4s' }}>
-            LeadOctave helps leaders, teams, and organizations move from chaos to cadence through trust, clear systems, and sustainable leadership practices.
+            {t.hero.subtitle}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-5 animate-fadeIn" style={{ animationDelay: '0.6s' }}>
@@ -200,7 +262,7 @@ export default function HeroNavBar() {
               href="#score"
               className="group relative px-10 py-5 bg-gradient-to-r from-[#D4A259] to-[#c9a430] text-white font-bold rounded-2xl transition-all duration-300 shadow-2xl shadow-[#D4A259]/30 hover:shadow-[#D4A259]/50 hover:scale-105 flex items-center justify-center gap-3 overflow-hidden"
             >
-              <span className="relative z-10">Get Your Octave Score</span>
+              <span className="relative z-10">{t.hero.ctaPrimary}</span>
               <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
               <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
@@ -208,7 +270,7 @@ export default function HeroNavBar() {
               href="#framework"
               className="group px-10 py-5 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-bold rounded-2xl hover:bg-white hover:text-[#142C4C] transition-all duration-300 flex items-center justify-center gap-3"
             >
-              Explore the LeadOctave Framework
+              {t.hero.ctaSecondary}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
@@ -221,8 +283,8 @@ export default function HeroNavBar() {
               ))}
             </div>
             <div>
-              <p className="text-white font-bold text-lg">500+ Leaders</p>
-              <p className="text-gray-400 text-sm">Transformed their organizations</p>
+              <p className="text-white font-bold text-lg">{t.hero.stats}</p>
+              <p className="text-gray-400 text-sm">{t.hero.statsSub}</p>
             </div>
           </div>
         </div>
