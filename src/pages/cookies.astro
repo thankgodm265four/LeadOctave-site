@@ -1,0 +1,61 @@
+---
+import HeroNavBar from "../components/HeroNavBar.jsx";
+import Footer from "../components/Footer.jsx";
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cookie Policy - LeadOctave</title>
+        <link rel="icon" type="image/png" href="/image/leadoctave-logo.png" />
+    </head>
+    <body class="antialiased bg-gray-50">
+        <HeroNavBar client:load />
+
+        <main class="pt-32 pb-20 px-6 min-h-screen">
+            <div class="max-w-4xl mx-auto">
+                <h1
+                    class="text-4xl md:text-5xl font-serif font-bold text-[#142C4C] mb-8"
+                >
+                    Cookie Policy
+                </h1>
+                <div
+                    class="bg-white p-10 rounded-3xl shadow-lg border border-gray-100 prose prose-lg max-w-none"
+                >
+                    <p>Last updated: December 14, 2025</p>
+                    <p>
+                        This Cookie Policy explains what cookies are and how we
+                        use them. You should read this policy so you can
+                        understand what type of cookies we use, or the
+                        information we collect using cookies and how that
+                        information is used.
+                    </p>
+
+                    <h3>1. What are cookies?</h3>
+                    <p>
+                        Cookies are small text files that are sent to your web
+                        browser by a website you visit. A cookie file is stored
+                        in your web browser and allows the Service or a
+                        third-party to recognize you and make your next visit
+                        easier and the Service more useful to you.
+                    </p>
+
+                    <h3>2. How LeadOctave uses cookies</h3>
+                    <p>
+                        When you use and access the Service, we may place a
+                        number of cookies files in your web browser. We use
+                        cookies for the following purposes: to enable certain
+                        functions of the Service, to provide analytics, to store
+                        your preferences, to enable advertisements delivery,
+                        including behavioral advertising.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <Footer client:load />
+    </body>
+</html>

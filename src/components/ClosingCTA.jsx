@@ -3,7 +3,7 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 export default function ClosingCTA() {
     return (
-        <div className="w-full relative overflow-hidden">
+        <div id="score" className="w-full relative overflow-hidden">
             {/* Gradient Background */}
             <div className="absolute inset-0 bg-gradient-to-br from-[#D4A259] via-[#c9a430] to-[#b8962e]"></div>
 

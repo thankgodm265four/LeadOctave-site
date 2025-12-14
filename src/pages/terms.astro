@@ -1,0 +1,59 @@
+---
+import HeroNavBar from "../components/HeroNavBar.jsx";
+import Footer from "../components/Footer.jsx";
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Terms of Service - LeadOctave</title>
+        <link rel="icon" type="image/png" href="/image/leadoctave-logo.png" />
+    </head>
+    <body class="antialiased bg-gray-50">
+        <HeroNavBar client:load />
+
+        <main class="pt-32 pb-20 px-6 min-h-screen">
+            <div class="max-w-4xl mx-auto">
+                <h1
+                    class="text-4xl md:text-5xl font-serif font-bold text-[#142C4C] mb-8"
+                >
+                    Terms of Service
+                </h1>
+                <div
+                    class="bg-white p-10 rounded-3xl shadow-lg border border-gray-100 prose prose-lg max-w-none"
+                >
+                    <p>Last updated: December 14, 2025</p>
+                    <p>
+                        Please read these Terms of Service ("Terms", "Terms of
+                        Service") carefully before using the LeadOctave website
+                        operated by LeadOctave ("us", "we", or "our").
+                    </p>
+
+                    <h3>1. Conditions of Use</h3>
+                    <p>
+                        By using this website, you certify that you have read
+                        and reviewed this Agreement and that you agree to comply
+                        with its terms. If you do not want to be bound by the
+                        terms of this Agreement, you are advised to leave the
+                        website accordingly.
+                    </p>
+
+                    <h3>2. Intellectual Property</h3>
+                    <p>
+                        You agree that all materials, products, and services
+                        provided on this website are the property of LeadOctave,
+                        its affiliates, directors, officers, employees, agents,
+                        suppliers, or licensors including all copyrights, trade
+                        secrets, trademarks, patents, and other intellectual
+                        property.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <Footer client:load />
+    </body>
+</html>

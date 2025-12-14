@@ -19,14 +19,14 @@ export default function Footer() {
     ],
     resources: [
       { label: "Octave Diagnostic", href: "/contact" },
-      { label: "Blog", href: "#blog" },
-      { label: "Case Studies", href: "#cases" },
-      { label: "Newsletter", href: "#newsletter" }
+      { label: "Blog", href: "/blog" },
+      { label: "Case Studies", href: "/cases" },
+      { label: "Newsletter", href: "/contact" }
     ],
     legal: [
-      { label: "Privacy Policy", href: "#privacy" },
-      { label: "Terms of Service", href: "#terms" },
-      { label: "Cookie Policy", href: "#cookies" }
+      { label: "Privacy Policy", href: "/privacy" },
+      { label: "Terms of Service", href: "/terms" },
+      { label: "Cookie Policy", href: "/cookies" }
     ]
   };
 

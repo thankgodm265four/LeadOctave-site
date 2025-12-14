@@ -1,0 +1,68 @@
+---
+import HeroNavBar from "../components/HeroNavBar.jsx";
+import Footer from "../components/Footer.jsx";
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Privacy Policy - LeadOctave</title>
+        <link rel="icon" type="image/png" href="/image/leadoctave-logo.png" />
+    </head>
+    <body class="antialiased bg-gray-50">
+        <HeroNavBar client:load />
+
+        <main class="pt-32 pb-20 px-6 min-h-screen">
+            <div class="max-w-4xl mx-auto">
+                <h1
+                    class="text-4xl md:text-5xl font-serif font-bold text-[#142C4C] mb-8"
+                >
+                    Privacy Policy
+                </h1>
+                <div
+                    class="bg-white p-10 rounded-3xl shadow-lg border border-gray-100 prose prose-lg max-w-none"
+                >
+                    <p>Last updated: December 14, 2025</p>
+                    <p>
+                        At LeadOctave, we take your privacy seriously. This
+                        Privacy Policy explains how we collect, use, disclose,
+                        and safeguard your information when you visit our
+                        website.
+                    </p>
+
+                    <h3>1. Information We Collect</h3>
+                    <p>
+                        We may collect personal information that you voluntarily
+                        provide to us when you register on the website, express
+                        an interest in obtaining information about us or our
+                        products and services, when you participate in
+                        activities on the website or otherwise when you contact
+                        us.
+                    </p>
+
+                    <h3>2. How We Use Your Information</h3>
+                    <p>
+                        We use personal information collected via our website
+                        for a variety of business purposes described below. We
+                        process your personal information for these purposes in
+                        reliance on our legitimate business interests, in order
+                        to enter into or perform a contract with you, with your
+                        consent, and/or for compliance with our legal
+                        obligations.
+                    </p>
+
+                    <h3>3. Contact Us</h3>
+                    <p>
+                        If you have questions or comments about this policy, you
+                        may email us at hello@leadoctave.com.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <Footer client:load />
+    </body>
+</html>
