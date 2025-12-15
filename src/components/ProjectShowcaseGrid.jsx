@@ -75,7 +75,7 @@ export default function ProjectShowcaseGrid() {
                                         </p>
                                         <a
                                             href="/services/system-design"
-                                            className="inline-flex items-center gap-2 text-[#05101E] hover:text-[#D2B48C] font-semibold transition-colors duration-300 group"
+                                            className="inline-flex items-center gap-2 text-[#05101E] hover:text-[#C19A6B] font-semibold transition-colors duration-300 group"
                                         >
                                             View project
                                             <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" />
@@ -98,7 +98,7 @@ export default function ProjectShowcaseGrid() {
                                         </p>
                                         <a
                                             href="/services/system-design"
-                                            className="inline-flex items-center gap-2 text-[#05101E] hover:text-[#D2B48C] font-semibold transition-colors duration-300 group"
+                                            className="inline-flex items-center gap-2 text-[#05101E] hover:text-[#C19A6B] font-semibold transition-colors duration-300 group"
                                         >
                                             View project
                                             <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" />

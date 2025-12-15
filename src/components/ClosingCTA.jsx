@@ -5,7 +5,7 @@ export default function ClosingCTA() {
     return (
         <div id="score" className="w-full relative overflow-hidden">
             {/* Gradient Background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#D2B48C] via-[#C19A6B] to-[#b8962e]"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-[#C19A6B] via-[#A07855] to-[#b8962e]"></div>
 
             {/* Animated Pattern */}
             <div className="absolute inset-0 opacity-20">

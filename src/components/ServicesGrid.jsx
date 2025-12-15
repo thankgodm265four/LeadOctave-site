@@ -22,7 +22,7 @@ export default function ServicesGrid() {
             description: "Shift how leaders think and act. Immersive learning experiences that drive behavioral change and skill acquisition.",
             icon: <BookOpen className="w-7 h-7" />,
             link: "/services/training",
-            accent: "from-[#D2B48C] to-amber-500"
+            accent: "from-[#C19A6B] to-amber-500"
         },
         {
             title: "Speaking & Strategy",
@@ -37,7 +37,7 @@ export default function ServicesGrid() {
         <div className="w-full bg-gradient-to-b from-gray-50 to-white py-32 px-6 md:px-16 relative overflow-hidden" id="services">
 
             {/* Background Decorations */}
-            <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-gradient-to-br from-[#D2B48C]/10 to-transparent rounded-full blur-3xl"></div>
+            <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-gradient-to-br from-[#C19A6B]/10 to-transparent rounded-full blur-3xl"></div>
             <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-[#05101E]/10 to-transparent rounded-full blur-3xl"></div>
 
             <div className="max-w-7xl mx-auto relative z-10">
@@ -46,18 +46,18 @@ export default function ServicesGrid() {
                 <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-20 gap-8">
                     <div className="max-w-2xl">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#05101E]/5 rounded-full mb-6">
-                            <Sparkles className="w-4 h-4 text-[#D2B48C]" />
+                            <Sparkles className="w-4 h-4 text-[#C19A6B]" />
                             <span className="text-sm font-bold text-[#05101E] uppercase tracking-wider">Our Services</span>
                         </div>
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#05101E] mb-6">
-                            How We Transform <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2B48C] to-amber-500">Leadership</span>
+                            How We Transform <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C19A6B] to-amber-500">Leadership</span>
                         </h2>
                         <p className="text-gray-600 text-lg leading-relaxed">
                             Comprehensive solutions designed to move your organization from friction to flow, building leaders who create lasting impact.
                         </p>
                     </div>
 
-                    <a href="/service" className="hidden lg:flex items-center gap-3 px-6 py-3 bg-[#05101E] text-white rounded-xl font-bold hover:bg-[#D2B48C] transition-all duration-300 group shadow-lg">
+                    <a href="/service" className="hidden lg:flex items-center gap-3 px-6 py-3 bg-[#05101E] text-white rounded-xl font-bold hover:bg-[#C19A6B] transition-all duration-300 group shadow-lg">
                         View All Services
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </a>
@@ -94,14 +94,14 @@ export default function ServicesGrid() {
                                 <div className="flex gap-4">
                                     <a
                                         href={service.link}
-                                        className="inline-flex items-center gap-2 text-[#05101E] font-bold group-hover:text-[#D2B48C] transition-colors"
+                                        className="inline-flex items-center gap-2 text-[#05101E] font-bold group-hover:text-[#C19A6B] transition-colors"
                                     >
                                         Learn More
                                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                     </a>
                                     <a
                                         href="/contact"
-                                        className="inline-flex items-center gap-2 px-4 py-2 bg-[#05101E]/10 rounded-lg text-[#05101E] font-bold hover:bg-[#D2B48C] hover:text-white transition-all duration-300"
+                                        className="inline-flex items-center gap-2 px-4 py-2 bg-[#05101E]/10 rounded-lg text-[#05101E] font-bold hover:bg-[#C19A6B] hover:text-white transition-all duration-300"
                                     >
                                         Book Now
                                     </a>
@@ -113,7 +113,7 @@ export default function ServicesGrid() {
 
                 {/* Mobile View All Link */}
                 <div className="mt-12 text-center lg:hidden">
-                    <a href="/service" className="inline-flex items-center gap-2 px-8 py-4 bg-[#05101E] text-white rounded-xl font-bold hover:bg-[#D2B48C] transition-colors shadow-lg">
+                    <a href="/service" className="inline-flex items-center gap-2 px-8 py-4 bg-[#05101E] text-white rounded-xl font-bold hover:bg-[#C19A6B] transition-colors shadow-lg">
                         View All Services
                         <ArrowRight className="w-5 h-5" />
                     </a>

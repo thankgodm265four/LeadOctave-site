@@ -111,19 +111,19 @@ export default function MultiViewTestimonialSlider() {
         <section className="py-24 px-6 bg-white relative overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-20 right-20 w-96 h-96 bg-[#D2B48C]/5 rounded-full blur-3xl"></div>
+                <div className="absolute top-20 right-20 w-96 h-96 bg-[#C19A6B]/5 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-20 left-20 w-72 h-72 bg-blue-500/5 rounded-full blur-3xl"></div>
             </div>
 
             <div className="max-w-7xl mx-auto relative z-10">
                 {/* Section Header */}
                 <div className="text-center mb-16">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#D2B48C]/10 rounded-full mb-6">
-                        <Quote className="w-4 h-4 text-[#D2B48C]" />
-                        <span className="text-sm font-bold text-[#D2B48C] uppercase tracking-wider">Testimonials</span>
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#C19A6B]/10 rounded-full mb-6">
+                        <Quote className="w-4 h-4 text-[#C19A6B]" />
+                        <span className="text-sm font-bold text-[#C19A6B] uppercase tracking-wider">Testimonials</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#05101E] mb-6">
-                        What Leaders <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2B48C] to-amber-500">Say</span>
+                        What Leaders <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C19A6B] to-amber-500">Say</span>
                     </h2>
                     <p className="text-gray-600 text-lg max-w-2xl mx-auto">
                         Real results from real leaders who have transformed their organizations with LeadOctave.
@@ -142,7 +142,7 @@ export default function MultiViewTestimonialSlider() {
                         <Quote className="absolute top-8 right-8 w-24 h-24 text-white/5" />
 
                         {/* Result Badge */}
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#D2B48C] rounded-full mb-8">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#C19A6B] rounded-full mb-8">
                             <Star className="w-4 h-4 text-white" fill="white" />
                             <span className="text-sm font-bold text-white">{testimonials[currentIndex].result}</span>
                         </div>
@@ -158,9 +158,9 @@ export default function MultiViewTestimonialSlider() {
                                 <img
                                     src={testimonials[currentIndex].image}
                                     alt={testimonials[currentIndex].author}
-                                    className="w-16 h-16 rounded-full object-cover border-2 border-[#D2B48C]"
+                                    className="w-16 h-16 rounded-full object-cover border-2 border-[#C19A6B]"
                                 />
-                                <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-[#D2B48C] rounded-full flex items-center justify-center">
+                                <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-[#C19A6B] rounded-full flex items-center justify-center">
                                     <Star className="w-3 h-3 text-white" fill="white" />
                                 </div>
                             </div>
@@ -175,8 +175,8 @@ export default function MultiViewTestimonialSlider() {
                             {[1, 2, 3, 4, 5].map((star) => (
                                 <Star
                                     key={star}
-                                    className="w-5 h-5 text-[#D2B48C]"
-                                    fill="#D2B48C"
+                                    className="w-5 h-5 text-[#C19A6B]"
+                                    fill="#C19A6B"
                                 />
                             ))}
                         </div>
@@ -185,14 +185,14 @@ export default function MultiViewTestimonialSlider() {
                     {/* Navigation Arrows */}
                     <button
                         onClick={prevSlide}
-                        className="absolute left-2 md:left-0 top-1/2 -translate-y-1/2 md:-translate-x-1/2 w-10 h-10 md:w-14 md:h-14 bg-white rounded-full shadow-xl flex items-center justify-center text-[#05101E] hover:bg-[#D2B48C] hover:text-white transition-all duration-300 hover:scale-110 z-20"
+                        className="absolute left-2 md:left-0 top-1/2 -translate-y-1/2 md:-translate-x-1/2 w-10 h-10 md:w-14 md:h-14 bg-white rounded-full shadow-xl flex items-center justify-center text-[#05101E] hover:bg-[#C19A6B] hover:text-white transition-all duration-300 hover:scale-110 z-20"
                         aria-label="Previous testimonial"
                     >
                         <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
                     </button>
                     <button
                         onClick={nextSlide}
-                        className="absolute right-2 md:right-0 top-1/2 -translate-y-1/2 md:translate-x-1/2 w-10 h-10 md:w-14 md:h-14 bg-white rounded-full shadow-xl flex items-center justify-center text-[#05101E] hover:bg-[#D2B48C] hover:text-white transition-all duration-300 hover:scale-110 z-20"
+                        className="absolute right-2 md:right-0 top-1/2 -translate-y-1/2 md:translate-x-1/2 w-10 h-10 md:w-14 md:h-14 bg-white rounded-full shadow-xl flex items-center justify-center text-[#05101E] hover:bg-[#C19A6B] hover:text-white transition-all duration-300 hover:scale-110 z-20"
                         aria-label="Next testimonial"
                     >
                         <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
@@ -213,11 +213,11 @@ export default function MultiViewTestimonialSlider() {
                             <img
                                 src={testimonial.image}
                                 alt={testimonial.author}
-                                className={`w-12 h-12 rounded-full object-cover border-2 transition-colors ${currentIndex === index ? 'border-[#D2B48C]' : 'border-gray-200'
+                                className={`w-12 h-12 rounded-full object-cover border-2 transition-colors ${currentIndex === index ? 'border-[#C19A6B]' : 'border-gray-200'
                                     }`}
                             />
                             {currentIndex === index && (
-                                <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-[#D2B48C] rounded-full"></div>
+                                <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-[#C19A6B] rounded-full"></div>
                             )}
                         </button>
                     ))}
@@ -233,7 +233,7 @@ export default function MultiViewTestimonialSlider() {
                             style={{ width: currentIndex === index ? '48px' : '16px' }}
                         >
                             <div
-                                className={`h-full bg-[#D2B48C] transition-all duration-300 ${currentIndex === index ? 'w-full' : 'w-0'
+                                className={`h-full bg-[#C19A6B] transition-all duration-300 ${currentIndex === index ? 'w-full' : 'w-0'
                                     }`}
                                 style={{
                                     animation: currentIndex === index && isAutoPlaying ? 'progress 6s linear' : 'none'
@@ -248,7 +248,7 @@ export default function MultiViewTestimonialSlider() {
                     <button
                         onClick={() => setIsAutoPlaying(!isAutoPlaying)}
                         className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm transition-colors ${isAutoPlaying
-                            ? 'bg-[#D2B48C]/10 text-[#D2B48C]'
+                            ? 'bg-[#C19A6B]/10 text-[#C19A6B]'
                             : 'bg-gray-100 text-gray-500'
                             }`}
                     >

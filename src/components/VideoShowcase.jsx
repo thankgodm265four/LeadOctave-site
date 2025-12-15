@@ -41,7 +41,7 @@ export default function VideoShowcase() {
         <section className="py-24 px-6 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-20 left-20 w-72 h-72 bg-[#D2B48C]/5 rounded-full blur-3xl"></div>
+                <div className="absolute top-20 left-20 w-72 h-72 bg-[#C19A6B]/5 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
             </div>
 
@@ -53,7 +53,7 @@ export default function VideoShowcase() {
                         <span className="text-sm font-bold text-[#05101E] uppercase tracking-wider">Video Showcase</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#05101E] mb-6">
-                        See the <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2B48C] to-amber-500">Transformation</span>
+                        See the <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C19A6B] to-amber-500">Transformation</span>
                     </h2>
                     <p className="text-gray-600 text-lg max-w-2xl mx-auto">
                         Watch how organizations are revolutionizing their leadership with the LeadOctave approach.
@@ -80,7 +80,7 @@ export default function VideoShowcase() {
                                 onClick={() => setIsPlaying(!isPlaying)}
                                 className="absolute inset-0 flex items-center justify-center group"
                             >
-                                <div className={`w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 group-hover:scale-110 group-hover:bg-[#D2B48C] ${isPlaying ? 'opacity-0' : 'opacity-100'}`}>
+                                <div className={`w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 group-hover:scale-110 group-hover:bg-[#C19A6B] ${isPlaying ? 'opacity-0' : 'opacity-100'}`}>
                                     <Play className="w-8 h-8 text-[#05101E] ml-1 group-hover:text-white transition-colors" fill="currentColor" />
                                 </div>
                             </button>
@@ -145,7 +145,7 @@ export default function VideoShowcase() {
                                         alt={video.title}
                                         className="w-full h-full object-cover"
                                     />
-                                    <div className={`absolute inset-0 flex items-center justify-center ${currentVideo === index ? 'bg-[#D2B48C]/80' : 'bg-black/40'}`}>
+                                    <div className={`absolute inset-0 flex items-center justify-center ${currentVideo === index ? 'bg-[#C19A6B]/80' : 'bg-black/40'}`}>
                                         <Play className="w-4 h-4 text-white" fill="white" />
                                     </div>
                                 </div>
@@ -165,7 +165,7 @@ export default function VideoShowcase() {
                         {/* View All Link */}
                         <a
                             href="#videos"
-                            className="block text-center py-4 text-[#D2B48C] font-bold hover:underline"
+                            className="block text-center py-4 text-[#C19A6B] font-bold hover:underline"
                         >
                             View All Videos →
                         </a>

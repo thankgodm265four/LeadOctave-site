@@ -28,7 +28,7 @@ export default function StrategyProcessSection() {
 
                     {/* Left Column - Headline */}
                     <div className="flex flex-col justify-start">
-                        <p className="text-xs uppercase tracking-widest text-[#D2B48C] mb-4 font-bold">
+                        <p className="text-xs uppercase tracking-widest text-[#C19A6B] mb-4 font-bold">
                             About LeadOctave
                         </p>
                         <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#05101E] leading-tight">
@@ -65,12 +65,12 @@ export default function StrategyProcessSection() {
                             {/* Card Content (Bottom Left) */}
                             <div className="absolute bottom-0 left-0 right-0 p-6 flex items-center gap-3 transform group-hover:translate-x-1 transition-transform duration-300">
                                 {/* Step Indicator Box */}
-                                <div className="bg-white text-black w-8 h-8 flex items-center justify-center font-bold font-serif text-sm flex-shrink-0 group-hover:bg-[#D2B48C] group-hover:scale-110 transition-all duration-300">
+                                <div className="bg-white text-black w-8 h-8 flex items-center justify-center font-bold font-serif text-sm flex-shrink-0 group-hover:bg-[#C19A6B] group-hover:scale-110 transition-all duration-300">
                                     {card.letter}
                                 </div>
 
                                 {/* Label Text */}
-                                <h3 className="text-white font-bold text-lg leading-tight group-hover:text-[#D2B48C] transition-colors duration-300">
+                                <h3 className="text-white font-bold text-lg leading-tight group-hover:text-[#C19A6B] transition-colors duration-300">
                                     {card.label}
                                 </h3>
                             </div>

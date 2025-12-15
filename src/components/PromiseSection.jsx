@@ -15,7 +15,7 @@ export default function PromiseSection() {
             }}></div>
 
             {/* Floating Orbs */}
-            <div className="absolute top-20 left-20 w-72 h-72 bg-[#D2B48C]/10 rounded-full blur-3xl animate-float"></div>
+            <div className="absolute top-20 left-20 w-72 h-72 bg-[#C19A6B]/10 rounded-full blur-3xl animate-float"></div>
             <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }}></div>
 
             {/* Octave Lines */}
@@ -37,13 +37,13 @@ export default function PromiseSection() {
 
                 {/* Badge */}
                 <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-10">
-                    <Zap className="w-4 h-4 text-[#D2B48C]" />
+                    <Zap className="w-4 h-4 text-[#C19A6B]" />
                     <span className="text-sm text-white/90 font-bold uppercase tracking-wider">The LeadOctave Promise</span>
                 </div>
 
                 <h2 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-10 leading-[1.1]">
                     Leadership Isn't Talent. <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2B48C] via-[#E6D2B5] to-[#D2B48C]">It's Architecture.</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C19A6B] via-[#D2B48C] to-[#C19A6B]">It's Architecture.</span>
                 </h2>
 
                 <p className="text-lg md:text-xl text-gray-300 mb-14 leading-relaxed max-w-3xl mx-auto">
@@ -52,7 +52,7 @@ export default function PromiseSection() {
 
                 <a
                     href="/contact"
-                    className="group inline-flex items-center gap-3 bg-gradient-to-r from-[#D2B48C] to-[#C19A6B] text-white px-12 py-6 rounded-2xl font-bold text-lg transition-all duration-300 shadow-2xl shadow-[#D2B48C]/25 hover:shadow-[#D2B48C]/50 hover:scale-105 relative overflow-hidden"
+                    className="group inline-flex items-center gap-3 bg-gradient-to-r from-[#C19A6B] to-[#A07855] text-white px-12 py-6 rounded-2xl font-bold text-lg transition-all duration-300 shadow-2xl shadow-[#C19A6B]/25 hover:shadow-[#C19A6B]/50 hover:scale-105 relative overflow-hidden"
                 >
                     <span className="relative z-10">Start the Octave Diagnostic</span>
                     <ArrowRight className="w-6 h-6 relative z-10 group-hover:translate-x-1 transition-transform" />
@@ -62,15 +62,15 @@ export default function PromiseSection() {
                 {/* Stats Row */}
                 <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 pt-16 border-t border-white/10">
                     <div className="text-center">
-                        <p className="text-4xl md:text-5xl font-bold text-[#D2B48C] mb-2">93%</p>
+                        <p className="text-4xl md:text-5xl font-bold text-[#C19A6B] mb-2">93%</p>
                         <p className="text-gray-400">Leadership Clarity Improvement</p>
                     </div>
                     <div className="text-center">
-                        <p className="text-4xl md:text-5xl font-bold text-[#D2B48C] mb-2">2.5x</p>
+                        <p className="text-4xl md:text-5xl font-bold text-[#C19A6B] mb-2">2.5x</p>
                         <p className="text-gray-400">Team Performance Increase</p>
                     </div>
                     <div className="text-center">
-                        <p className="text-4xl md:text-5xl font-bold text-[#D2B48C] mb-2">85%</p>
+                        <p className="text-4xl md:text-5xl font-bold text-[#C19A6B] mb-2">85%</p>
                         <p className="text-gray-400">Sustainable Growth Rate</p>
                     </div>
                 </div>

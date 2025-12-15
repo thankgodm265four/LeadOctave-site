@@ -58,7 +58,7 @@ export default function FloatingElements() {
                 {/* Main FAB Button */}
                 <button
                     onClick={() => setShowQuickActions(!showQuickActions)}
-                    className={`w-16 h-16 bg-gradient-to-r from-[#D2B48C] to-[#C19A6B] text-white rounded-full shadow-2xl shadow-[#D2B48C]/30 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[#D2B48C]/50 ${showQuickActions ? 'rotate-45' : ''
+                    className={`w-16 h-16 bg-gradient-to-r from-[#C19A6B] to-[#A07855] text-white rounded-full shadow-2xl shadow-[#C19A6B]/30 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[#C19A6B]/50 ${showQuickActions ? 'rotate-45' : ''
                         }`}
                     aria-label="Quick actions"
                 >
@@ -71,7 +71,7 @@ export default function FloatingElements() {
 
                 {/* Pulse Ring */}
                 {!showQuickActions && (
-                    <div className="absolute inset-0 rounded-full bg-[#D2B48C] animate-ping opacity-20"></div>
+                    <div className="absolute inset-0 rounded-full bg-[#C19A6B] animate-ping opacity-20"></div>
                 )}
             </div>
 
@@ -99,7 +99,7 @@ function ProgressBar() {
     return (
         <div className="fixed top-0 left-0 right-0 z-[100] h-1 bg-transparent">
             <div
-                className="h-full bg-gradient-to-r from-[#D2B48C] to-amber-400 transition-all duration-100"
+                className="h-full bg-gradient-to-r from-[#C19A6B] to-amber-400 transition-all duration-100"
                 style={{ width: `${progress}%` }}
             />
         </div>

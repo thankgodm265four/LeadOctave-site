@@ -49,7 +49,7 @@ export default function ValuePropVideoBlock() {
                         <div className="relative w-full max-w-6xl aspect-video">
                             <button
                                 onClick={() => setIsPlaying(false)}
-                                className="absolute -top-12 right-0 text-white hover:text-[#D2B48C] transition-colors"
+                                className="absolute -top-12 right-0 text-white hover:text-[#C19A6B] transition-colors"
                                 aria-label="Close video"
                             >
                                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">

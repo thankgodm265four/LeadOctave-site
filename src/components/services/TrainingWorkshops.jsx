@@ -29,7 +29,7 @@ export default function TrainingWorkshops() {
             <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 px-6 bg-gradient-to-br from-[#0a1628] via-[#05101E] to-[#0A1F3D] overflow-hidden">
                 {/* Animated Background */}
                 <div className="absolute inset-0">
-                    <div className="absolute top-20 right-20 w-96 h-96 bg-[#D2B48C]/20 rounded-full blur-3xl animate-float"></div>
+                    <div className="absolute top-20 right-20 w-96 h-96 bg-[#C19A6B]/20 rounded-full blur-3xl animate-float"></div>
                     <div className="absolute bottom-20 left-20 w-[500px] h-[500px] bg-amber-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
 
                     {/* Grid Pattern */}
@@ -52,14 +52,14 @@ export default function TrainingWorkshops() {
                     <div className="flex flex-col lg:flex-row items-center gap-16">
                         {/* Left Content */}
                         <div className="lg:w-1/2">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#D2B48C]/20 backdrop-blur-sm rounded-full border border-[#D2B48C]/30 mb-8">
-                                <BookOpen className="w-4 h-4 text-[#D2B48C]" />
+                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#C19A6B]/20 backdrop-blur-sm rounded-full border border-[#C19A6B]/30 mb-8">
+                                <BookOpen className="w-4 h-4 text-[#C19A6B]" />
                                 <span className="text-sm text-white/90 font-semibold">Training & Workshops</span>
                             </div>
 
                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-[1.1] mb-8">
                                 Shift How Leaders <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2B48C] to-amber-400">Think & Act</span>
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C19A6B] to-amber-400">Think & Act</span>
                             </h1>
 
                             <p className="text-xl text-gray-300 mb-10 leading-relaxed">
@@ -69,7 +69,7 @@ export default function TrainingWorkshops() {
                             <div className="flex flex-wrap gap-4">
                                 <a
                                     href="#contact"
-                                    className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#D2B48C] to-amber-500 text-white font-bold rounded-xl transition-all duration-300 shadow-2xl shadow-[#D2B48C]/30 hover:shadow-[#D2B48C]/50 hover:scale-105"
+                                    className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#C19A6B] to-amber-500 text-white font-bold rounded-xl transition-all duration-300 shadow-2xl shadow-[#C19A6B]/30 hover:shadow-[#C19A6B]/50 hover:scale-105"
                                 >
                                     Book Training
                                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -86,13 +86,13 @@ export default function TrainingWorkshops() {
                             <div className="mt-12 flex items-center gap-6">
                                 <div className="flex -space-x-3">
                                     {[1, 2, 3, 4].map((i) => (
-                                        <div key={i} className="w-10 h-10 rounded-full bg-gradient-to-br from-[#D2B48C] to-amber-500 border-2 border-white/20"></div>
+                                        <div key={i} className="w-10 h-10 rounded-full bg-gradient-to-br from-[#C19A6B] to-amber-500 border-2 border-white/20"></div>
                                     ))}
                                 </div>
                                 <div>
                                     <div className="flex items-center gap-1 mb-1">
                                         {[1, 2, 3, 4, 5].map((i) => (
-                                            <Star key={i} className="w-4 h-4 text-[#D2B48C] fill-[#D2B48C]" />
+                                            <Star key={i} className="w-4 h-4 text-[#C19A6B] fill-[#C19A6B]" />
                                         ))}
                                     </div>
                                     <p className="text-sm text-gray-400">500+ leaders trained worldwide</p>
@@ -105,7 +105,7 @@ export default function TrainingWorkshops() {
                             <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
                                 <div className="grid grid-cols-2 gap-4">
                                     <div className="bg-white/10 rounded-2xl p-6 text-center">
-                                        <p className="text-4xl font-bold text-[#D2B48C] mb-2">94%</p>
+                                        <p className="text-4xl font-bold text-[#C19A6B] mb-2">94%</p>
                                         <p className="text-sm text-gray-400">Behavior Retention</p>
                                     </div>
                                     <div className="bg-white/10 rounded-2xl p-6 text-center">
@@ -124,7 +124,7 @@ export default function TrainingWorkshops() {
                             </div>
 
                             {/* Decorative Elements */}
-                            <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-[#D2B48C] to-amber-500 rounded-2xl flex items-center justify-center shadow-xl rotate-12">
+                            <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-[#C19A6B] to-amber-500 rounded-2xl flex items-center justify-center shadow-xl rotate-12">
                                 <Award className="w-10 h-10 text-white" />
                             </div>
                         </div>
@@ -190,7 +190,7 @@ export default function TrainingWorkshops() {
 
             {/* Solution Section */}
             <section className="py-24 px-6 bg-white relative overflow-hidden">
-                <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#D2B48C]/5 rounded-full blur-3xl"></div>
+                <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#C19A6B]/5 rounded-full blur-3xl"></div>
 
                 <div className="max-w-6xl mx-auto relative z-10">
                     <div className="text-center mb-16">
@@ -199,7 +199,7 @@ export default function TrainingWorkshops() {
                             <span className="text-sm font-bold text-amber-600 uppercase tracking-wider">Our Solution</span>
                         </div>
                         <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#05101E] mb-6">
-                            Targeted Workshops & <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2B48C] to-amber-500">Training</span>
+                            Targeted Workshops & <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C19A6B] to-amber-500">Training</span>
                         </h2>
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                             LeadOctave provides targeted workshops and leadership training designed for lasting impact and immediate application.
@@ -209,11 +209,11 @@ export default function TrainingWorkshops() {
                     <div className="grid md:grid-cols-3 gap-8">
                         {solutions.map((solution, index) => (
                             <div key={index} className="group relative">
-                                <div className="absolute inset-0 bg-gradient-to-br from-[#D2B48C] to-amber-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                                <div className="absolute inset-0 bg-gradient-to-br from-[#C19A6B] to-amber-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                                 <div className="absolute inset-[2px] bg-white rounded-[calc(1.5rem-2px)] group-hover:bg-white"></div>
 
                                 <div className="relative z-10 p-8">
-                                    <div className="w-16 h-16 bg-gradient-to-br from-[#D2B48C] to-amber-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                                    <div className="w-16 h-16 bg-gradient-to-br from-[#C19A6B] to-amber-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                                         <span className="text-2xl font-bold text-white">0{index + 1}</span>
                                     </div>
                                     <h3 className="text-xl font-bold text-[#05101E] mb-3">{solution.title}</h3>
@@ -253,7 +253,7 @@ export default function TrainingWorkshops() {
             </section>
 
             {/* Closing CTA */}
-            <section className="py-32 px-6 bg-gradient-to-br from-[#D2B48C] via-amber-500 to-orange-500 relative overflow-hidden">
+            <section className="py-32 px-6 bg-gradient-to-br from-[#C19A6B] via-amber-500 to-orange-500 relative overflow-hidden">
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="absolute top-10 left-10 w-40 h-40 bg-white/10 rounded-full blur-2xl animate-float"></div>
                     <div className="absolute bottom-10 right-10 w-60 h-60 bg-white/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
@@ -275,7 +275,7 @@ export default function TrainingWorkshops() {
                     </p>
                     <a
                         href="#contact"
-                        className="group inline-flex items-center gap-4 px-14 py-6 bg-white text-[#D2B48C] font-bold text-xl rounded-2xl transition-all duration-300 shadow-2xl hover:shadow-white/25 transform hover:-translate-y-1 hover:scale-105"
+                        className="group inline-flex items-center gap-4 px-14 py-6 bg-white text-[#C19A6B] font-bold text-xl rounded-2xl transition-all duration-300 shadow-2xl hover:shadow-white/25 transform hover:-translate-y-1 hover:scale-105"
                     >
                         Book Your Workshop
                         <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />

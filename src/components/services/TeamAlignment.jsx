@@ -92,7 +92,7 @@ export default function TeamAlignment() {
                                 <div>
                                     <div className="flex items-center gap-1 mb-1">
                                         {[1, 2, 3, 4, 5].map((i) => (
-                                            <Star key={i} className="w-4 h-4 text-[#D2B48C] fill-[#D2B48C]" />
+                                            <Star key={i} className="w-4 h-4 text-[#C19A6B] fill-[#C19A6B]" />
                                         ))}
                                     </div>
                                     <p className="text-sm text-gray-400">Trusted by 50+ teams worldwide</p>
@@ -113,7 +113,7 @@ export default function TeamAlignment() {
                                         <p className="text-sm text-gray-400">Faster Decisions</p>
                                     </div>
                                     <div className="bg-white/10 rounded-2xl p-6 text-center">
-                                        <p className="text-4xl font-bold text-[#D2B48C] mb-2">92%</p>
+                                        <p className="text-4xl font-bold text-[#C19A6B] mb-2">92%</p>
                                         <p className="text-sm text-gray-400">Employee Engagement</p>
                                     </div>
                                     <div className="bg-white/10 rounded-2xl p-6 text-center">

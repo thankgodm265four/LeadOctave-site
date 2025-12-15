@@ -72,7 +72,7 @@ export default function ChatWidget() {
                     <div className="flex items-center gap-3">
                         <div className="relative">
                             <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center border border-white/20">
-                                <User className="w-6 h-6 text-[#D2B48C]" />
+                                <User className="w-6 h-6 text-[#C19A6B]" />
                             </div>
                             <div className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-[#05101E] rounded-full"></div>
                         </div>
@@ -139,12 +139,12 @@ export default function ChatWidget() {
                         value={inputValue}
                         onChange={(e) => setInputValue(e.target.value)}
                         placeholder="Type your message..."
-                        className="flex-1 bg-gray-50 border-none rounded-xl px-4 py-2 text-sm focus:ring-2 focus:ring-[#D2B48C]/50 outline-none"
+                        className="flex-1 bg-gray-50 border-none rounded-xl px-4 py-2 text-sm focus:ring-2 focus:ring-[#C19A6B]/50 outline-none"
                     />
                     <button
                         type="submit"
                         disabled={!inputValue.trim()}
-                        className="p-2 bg-[#D2B48C] text-white rounded-xl hover:bg-[#C19A6B] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="p-2 bg-[#C19A6B] text-white rounded-xl hover:bg-[#A07855] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                         <Send className="w-5 h-5" />
                     </button>
@@ -156,7 +156,7 @@ export default function ChatWidget() {
                 onClick={() => setIsOpen(!isOpen)}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
-                className={`group relative flex items-center justify-center w-14 h-14 rounded-full shadow-lg shadow-[#D2B48C]/30 transition-all duration-300 ${isOpen ? 'bg-[#05101E] rotate-90' : 'bg-gradient-to-r from-[#D2B48C] to-[#C19A6B] hover:scale-110'
+                className={`group relative flex items-center justify-center w-14 h-14 rounded-full shadow-lg shadow-[#C19A6B]/30 transition-all duration-300 ${isOpen ? 'bg-[#05101E] rotate-90' : 'bg-gradient-to-r from-[#C19A6B] to-[#A07855] hover:scale-110'
                     }`}
             >
                 {isOpen ? (

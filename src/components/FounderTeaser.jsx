@@ -6,7 +6,7 @@ export default function FounderTeaser() {
         <div className="w-full bg-gradient-to-b from-white to-gray-50 py-32 px-6 md:px-16 overflow-hidden relative">
 
             {/* Background Decorations */}
-            <div className="absolute top-0 left-1/2 w-[800px] h-[800px] bg-[#D2B48C]/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+            <div className="absolute top-0 left-1/2 w-[800px] h-[800px] bg-[#C19A6B]/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
 
             <div className="max-w-7xl mx-auto relative z-10">
                 <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
@@ -25,12 +25,12 @@ export default function FounderTeaser() {
                             </div>
 
                             {/* Decorative Frame */}
-                            <div className="absolute -inset-4 border-2 border-[#D2B48C]/20 rounded-3xl -z-10"></div>
+                            <div className="absolute -inset-4 border-2 border-[#C19A6B]/20 rounded-3xl -z-10"></div>
                             <div className="absolute -inset-8 border border-[#05101E]/10 rounded-3xl -z-20"></div>
                         </div>
 
                         {/* Floating Elements */}
-                        <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-[#D2B48C] to-amber-500 rounded-2xl flex items-center justify-center shadow-xl rotate-12">
+                        <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-[#C19A6B] to-amber-500 rounded-2xl flex items-center justify-center shadow-xl rotate-12">
                             <Quote className="w-10 h-10 text-white" />
                         </div>
 
@@ -43,15 +43,15 @@ export default function FounderTeaser() {
                     {/* Content Section */}
                     <div className="w-full lg:w-1/2">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#05101E]/5 rounded-full mb-6">
-                            <span className="text-sm font-bold text-[#D2B48C] uppercase tracking-wider">The Founder</span>
+                            <span className="text-sm font-bold text-[#C19A6B] uppercase tracking-wider">The Founder</span>
                         </div>
 
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#05101E] mb-8">
-                            Meet <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2B48C] to-amber-500">Joshua Tolofari</span>
+                            Meet <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C19A6B] to-amber-500">Joshua Tolofari</span>
                         </h2>
 
-                        <blockquote className="relative text-2xl md:text-3xl font-serif italic text-gray-700 leading-relaxed mb-8 pl-8 border-l-4 border-[#D2B48C]">
-                            <span className="absolute -left-2 -top-4 text-6xl text-[#D2B48C]/20 font-serif">"</span>
+                        <blockquote className="relative text-2xl md:text-3xl font-serif italic text-gray-700 leading-relaxed mb-8 pl-8 border-l-4 border-[#C19A6B]">
+                            <span className="absolute -left-2 -top-4 text-6xl text-[#C19A6B]/20 font-serif">"</span>
                             I help leaders move from chaos to cadence through structures of trust, clarity, and sustainable execution.
                         </blockquote>
 

@@ -56,7 +56,7 @@ export default function FounderPage() {
                             }}
                         ></div>
                     ))}
-                    <div className="absolute top-20 right-20 w-96 h-96 bg-[#D2B48C]/10 rounded-full blur-3xl animate-float"></div>
+                    <div className="absolute top-20 right-20 w-96 h-96 bg-[#C19A6B]/10 rounded-full blur-3xl animate-float"></div>
                     <div className="absolute bottom-20 left-20 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
                 </div>
 
@@ -64,23 +64,23 @@ export default function FounderPage() {
                     <div className="flex flex-col lg:flex-row items-center gap-16">
                         {/* Left Content */}
                         <div className="lg:w-1/2 text-center lg:text-left">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#D2B48C]/20 backdrop-blur-sm rounded-full border border-[#D2B48C]/30 mb-8">
-                                <Sparkles className="w-4 h-4 text-[#D2B48C]" />
+                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#C19A6B]/20 backdrop-blur-sm rounded-full border border-[#C19A6B]/30 mb-8">
+                                <Sparkles className="w-4 h-4 text-[#C19A6B]" />
                                 <span className="text-sm text-white font-semibold">The Founder</span>
                             </div>
 
                             <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white leading-[1.1] mb-6">
-                                A Systems Thinker Who <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2B48C] to-amber-400">Builds Leaders</span>
+                                A Systems Thinker Who <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C19A6B] to-amber-400">Builds Leaders</span>
                             </h1>
 
                             <p className="text-xl md:text-2xl text-gray-300 mb-10 leading-relaxed">
-                                I help leaders move from chaos to cadence through structures of <span className="text-[#D2B48C] font-semibold">trust</span>, <span className="text-[#D2B48C] font-semibold">clarity</span>, and <span className="text-[#D2B48C] font-semibold">sustainable execution</span>.
+                                I help leaders move from chaos to cadence through structures of <span className="text-[#C19A6B] font-semibold">trust</span>, <span className="text-[#C19A6B] font-semibold">clarity</span>, and <span className="text-[#C19A6B] font-semibold">sustainable execution</span>.
                             </p>
 
                             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                                 <a
                                     href="/contact"
-                                    className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#D2B48C] to-[#C19A6B] text-white font-bold rounded-xl transition-all duration-300 shadow-2xl shadow-[#D2B48C]/30 hover:shadow-[#D2B48C]/50 hover:scale-105"
+                                    className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#C19A6B] to-[#A07855] text-white font-bold rounded-xl transition-all duration-300 shadow-2xl shadow-[#C19A6B]/30 hover:shadow-[#C19A6B]/50 hover:scale-105"
                                 >
                                     Invite Joshua
                                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -96,13 +96,13 @@ export default function FounderPage() {
 
                             {/* Social Links */}
                             <div className="flex gap-4 mt-10 justify-center lg:justify-start">
-                                <a href="#" className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-white hover:bg-[#D2B48C] transition-colors duration-300">
+                                <a href="#" className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-white hover:bg-[#C19A6B] transition-colors duration-300">
                                     <Linkedin className="w-5 h-5" />
                                 </a>
-                                <a href="#" className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-white hover:bg-[#D2B48C] transition-colors duration-300">
+                                <a href="#" className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-white hover:bg-[#C19A6B] transition-colors duration-300">
                                     <Twitter className="w-5 h-5" />
                                 </a>
-                                <a href="#" className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-white hover:bg-[#D2B48C] transition-colors duration-300">
+                                <a href="#" className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-white hover:bg-[#C19A6B] transition-colors duration-300">
                                     <Mail className="w-5 h-5" />
                                 </a>
                             </div>
@@ -123,11 +123,11 @@ export default function FounderPage() {
                                 </div>
 
                                 {/* Decorative Frames */}
-                                <div className="absolute -inset-4 border-2 border-[#D2B48C]/30 rounded-3xl -z-10"></div>
+                                <div className="absolute -inset-4 border-2 border-[#C19A6B]/30 rounded-3xl -z-10"></div>
                                 <div className="absolute -inset-8 border border-white/10 rounded-3xl -z-20"></div>
 
                                 {/* Quote Badge */}
-                                <div className="absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-br from-[#D2B48C] to-amber-500 rounded-2xl flex items-center justify-center shadow-xl rotate-12 animate-float">
+                                <div className="absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-br from-[#C19A6B] to-amber-500 rounded-2xl flex items-center justify-center shadow-xl rotate-12 animate-float">
                                     <Quote className="w-8 h-8 text-white" />
                                 </div>
 
@@ -151,7 +151,7 @@ export default function FounderPage() {
 
             {/* Founder Story - 3 Block Narrative */}
             <section className="py-24 px-6 bg-white relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-96 h-96 bg-[#D2B48C]/5 rounded-full blur-3xl"></div>
+                <div className="absolute top-0 right-0 w-96 h-96 bg-[#C19A6B]/5 rounded-full blur-3xl"></div>
 
                 <div className="max-w-6xl mx-auto relative z-10">
                     <div className="text-center mb-16">
@@ -160,7 +160,7 @@ export default function FounderPage() {
                             <span className="text-sm font-bold text-[#05101E] uppercase tracking-wider">The Journey</span>
                         </div>
                         <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#05101E]">
-                            From <span className="text-red-500">Chaos</span> to <span className="text-[#D2B48C]">Cadence</span>
+                            From <span className="text-red-500">Chaos</span> to <span className="text-[#C19A6B]">Cadence</span>
                         </h2>
                     </div>
 
@@ -198,11 +198,11 @@ export default function FounderPage() {
 
                         {/* Block 3: The System */}
                         <div className="relative group">
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#D2B48C] to-amber-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#C19A6B] to-amber-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                             <div className="absolute inset-[2px] bg-white rounded-[calc(1.5rem-2px)]"></div>
                             <div className="relative z-10 p-8">
                                 <div className="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mb-6">
-                                    <span className="text-3xl font-bold text-[#D2B48C]">03</span>
+                                    <span className="text-3xl font-bold text-[#C19A6B]">03</span>
                                 </div>
                                 <h3 className="text-xl font-bold text-[#05101E] mb-4">The System</h3>
                                 <p className="text-gray-600 leading-relaxed">
@@ -219,7 +219,7 @@ export default function FounderPage() {
                             <blockquote className="text-2xl md:text-3xl text-white font-serif italic leading-relaxed mb-6 relative z-10">
                                 "Leadership has rhythm. And when you find that rhythm, everything changes."
                             </blockquote>
-                            <p className="text-[#D2B48C] font-bold text-lg">— Joshua Tolofari</p>
+                            <p className="text-[#C19A6B] font-bold text-lg">— Joshua Tolofari</p>
                         </div>
                     </div>
                 </div>
@@ -230,13 +230,13 @@ export default function FounderPage() {
                 <div className="max-w-6xl mx-auto relative z-10">
                     <div className="flex flex-col lg:flex-row items-center gap-16">
                         <div className="lg:w-1/2">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#D2B48C]/10 rounded-full mb-6">
-                                <Lightbulb className="w-4 h-4 text-[#D2B48C]" />
-                                <span className="text-sm font-bold text-[#D2B48C] uppercase tracking-wider">Philosophy</span>
+                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#C19A6B]/10 rounded-full mb-6">
+                                <Lightbulb className="w-4 h-4 text-[#C19A6B]" />
+                                <span className="text-sm font-bold text-[#C19A6B] uppercase tracking-wider">Philosophy</span>
                             </div>
                             <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#05101E] mb-8 leading-tight">
                                 Leadership Is Not a Gift. <br />
-                                <span className="text-[#D2B48C]">It's a System.</span>
+                                <span className="text-[#C19A6B]">It's a System.</span>
                             </h2>
                             <p className="text-lg text-gray-600 leading-relaxed mb-8">
                                 Leaders succeed only when supported by clear systems, trust, and alignment. Charisma fades. Personality is inconsistent. But systems? Systems scale.
@@ -268,7 +268,7 @@ export default function FounderPage() {
                                     alt="Leadership in action"
                                     className="w-full rounded-3xl shadow-2xl"
                                 />
-                                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-[#D2B48C] to-amber-500 rounded-2xl flex items-center justify-center shadow-xl">
+                                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-[#C19A6B] to-amber-500 rounded-2xl flex items-center justify-center shadow-xl">
                                     <div className="text-center text-white">
                                         <p className="text-3xl font-bold">15+</p>
                                         <p className="text-sm">Years</p>
@@ -335,7 +335,7 @@ export default function FounderPage() {
                             <span className="text-sm font-bold text-[#05101E] uppercase tracking-wider">Trust & Credibility</span>
                         </div>
                         <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#05101E]">
-                            Trusted by Leaders and <span className="text-[#D2B48C]">Organizations</span>
+                            Trusted by Leaders and <span className="text-[#C19A6B]">Organizations</span>
                         </h2>
                     </div>
 
@@ -344,7 +344,7 @@ export default function FounderPage() {
                         {clientLogos.map((client, index) => (
                             <div
                                 key={index}
-                                className="flex items-center gap-3 px-8 py-4 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-[#D2B48C]/30 transition-all duration-300"
+                                className="flex items-center gap-3 px-8 py-4 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-[#C19A6B]/30 transition-all duration-300"
                             >
                                 <div className="w-12 h-12 bg-gradient-to-br from-[#05101E] to-[#0A1F3D] rounded-xl flex items-center justify-center text-white font-bold text-xl">
                                     {client.initial}
@@ -364,7 +364,7 @@ export default function FounderPage() {
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                             <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 group-hover:bg-[#D2B48C] transition-all duration-300">
+                                <div className="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 group-hover:bg-[#C19A6B] transition-all duration-300">
                                     <Play className="w-8 h-8 text-[#05101E] ml-1 group-hover:text-white" fill="currentColor" />
                                 </div>
                             </div>
@@ -378,7 +378,7 @@ export default function FounderPage() {
             </section>
 
             {/* Closing CTA */}
-            <section id="contact" className="py-32 px-6 bg-gradient-to-br from-[#D2B48C] via-[#C19A6B] to-[#b8962e] relative overflow-hidden">
+            <section id="contact" className="py-32 px-6 bg-gradient-to-br from-[#C19A6B] via-[#A07855] to-[#b8962e] relative overflow-hidden">
                 {/* Animated Background */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="absolute top-10 left-10 w-40 h-40 bg-white/10 rounded-full blur-2xl animate-float"></div>

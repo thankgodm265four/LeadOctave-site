@@ -22,7 +22,7 @@ export default function MarqueeBanner() {
             <div className="flex animate-marquee whitespace-nowrap">
                 {[...items, ...items, ...items].map((item, index) => (
                     <div key={index} className="flex items-center mx-8">
-                        <Sparkles className="w-4 h-4 text-[#D2B48C] mr-3" />
+                        <Sparkles className="w-4 h-4 text-[#C19A6B] mr-3" />
                         <span className="text-white font-medium tracking-wide">{item}</span>
                     </div>
                 ))}

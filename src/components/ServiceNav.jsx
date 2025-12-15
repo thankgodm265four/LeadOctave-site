@@ -87,13 +87,13 @@ export default function ServiceNav() {
 
                         <a
                             href="/contact"
-                            className="group relative px-7 py-3 bg-gradient-to-r from-[#D2B48C] to-[#C19A6B] text-white rounded-xl text-sm font-bold transition-all duration-300 shadow-lg shadow-[#D2B48C]/30 hover:shadow-xl hover:shadow-[#D2B48C]/50 hover:scale-105 overflow-hidden"
+                            className="group relative px-7 py-3 bg-gradient-to-r from-[#C19A6B] to-[#A07855] text-white rounded-xl text-sm font-bold transition-all duration-300 shadow-lg shadow-[#C19A6B]/30 hover:shadow-xl hover:shadow-[#C19A6B]/50 hover:scale-105 overflow-hidden"
                         >
                             <span className="relative z-10 flex items-center gap-2">
                                 <Sparkles className="w-4 h-4" />
                                 Get Your Octave Score
                             </span>
-                            <div className="absolute inset-0 bg-gradient-to-r from-[#C19A6B] to-[#D2B48C] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div className="absolute inset-0 bg-gradient-to-r from-[#A07855] to-[#C19A6B] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         </a>
                     </div>
 
@@ -131,7 +131,7 @@ export default function ServiceNav() {
                         ))}
                         <a
                             href="/contact"
-                            className="mt-4 text-center bg-gradient-to-r from-[#D2B48C] to-[#C19A6B] text-white py-4 rounded-xl font-bold shadow-lg"
+                            className="mt-4 text-center bg-gradient-to-r from-[#C19A6B] to-[#A07855] text-white py-4 rounded-xl font-bold shadow-lg"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Get Your Octave Score

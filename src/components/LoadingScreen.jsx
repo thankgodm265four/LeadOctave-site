@@ -48,7 +48,7 @@ export default function LoadingScreen() {
                 ))}
 
                 {/* Floating Orbs */}
-                <div className="absolute top-20 right-20 w-72 h-72 bg-[#D2B48C]/20 rounded-full blur-3xl animate-float"></div>
+                <div className="absolute top-20 right-20 w-72 h-72 bg-[#C19A6B]/20 rounded-full blur-3xl animate-float"></div>
                 <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
             </div>
 
@@ -65,7 +65,7 @@ export default function LoadingScreen() {
                 {/* Loading Bar */}
                 <div className="w-64 h-1 bg-white/10 rounded-full overflow-hidden mb-4">
                     <div
-                        className="h-full bg-gradient-to-r from-[#D2B48C] to-amber-400 rounded-full transition-all duration-300"
+                        className="h-full bg-gradient-to-r from-[#C19A6B] to-amber-400 rounded-full transition-all duration-300"
                         style={{ width: `${Math.min(progress, 100)}%` }}
                     ></div>
                 </div>
@@ -80,7 +80,7 @@ export default function LoadingScreen() {
                     {[0, 1, 2].map((i) => (
                         <div
                             key={i}
-                            className="w-2 h-2 bg-[#D2B48C] rounded-full animate-bounce"
+                            className="w-2 h-2 bg-[#C19A6B] rounded-full animate-bounce"
                             style={{ animationDelay: `${i * 0.15}s` }}
                         ></div>
                     ))}

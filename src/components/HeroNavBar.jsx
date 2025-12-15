@@ -65,15 +65,15 @@ export default function HeroNavBar() {
 
       {/* Animated Octave Lines */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute w-[200%] h-[1px] bg-gradient-to-r from-transparent via-[#D2B48C]/30 to-transparent top-[20%] -left-1/2 transform -rotate-6 animate-pulse"></div>
+        <div className="absolute w-[200%] h-[1px] bg-gradient-to-r from-transparent via-[#C19A6B]/30 to-transparent top-[20%] -left-1/2 transform -rotate-6 animate-pulse"></div>
         <div className="absolute w-[200%] h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent top-[35%] -left-1/2 transform -rotate-3 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-        <div className="absolute w-[200%] h-[1px] bg-gradient-to-r from-transparent via-[#D2B48C]/20 to-transparent top-[50%] -left-1/2 transform -rotate-1 animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute w-[200%] h-[1px] bg-gradient-to-r from-transparent via-[#C19A6B]/20 to-transparent top-[50%] -left-1/2 transform -rotate-1 animate-pulse" style={{ animationDelay: '1s' }}></div>
         <div className="absolute w-[200%] h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent top-[65%] -left-1/2 transform rotate-2 animate-pulse" style={{ animationDelay: '1.5s' }}></div>
-        <div className="absolute w-[200%] h-[1px] bg-gradient-to-r from-transparent via-[#D2B48C]/20 to-transparent top-[80%] -left-1/2 transform rotate-4 animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute w-[200%] h-[1px] bg-gradient-to-r from-transparent via-[#C19A6B]/20 to-transparent top-[80%] -left-1/2 transform rotate-4 animate-pulse" style={{ animationDelay: '2s' }}></div>
       </div>
 
       {/* Floating Orbs */}
-      <div className="absolute top-20 right-20 w-72 h-72 bg-[#D2B48C]/10 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute top-20 right-20 w-72 h-72 bg-[#C19A6B]/10 rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-40 left-20 w-96 h-96 bg-[#05101E]/50 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
 
       {/* Glassmorphism Overlay */}
@@ -114,7 +114,7 @@ export default function HeroNavBar() {
                 >
                   <span className="relative z-10">{link.label}</span>
                   {isActive(link.href) && (
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#D2B48C]/20 to-transparent opacity-50"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#C19A6B]/20 to-transparent opacity-50"></div>
                   )}
                 </a>
               ))}
@@ -146,7 +146,7 @@ export default function HeroNavBar() {
                           setLanguage(lang.code);
                           setIsLangMenuOpen(false);
                         }}
-                        className={`w-full flex items-center justify-between px-4 py-3 text-sm hover:bg-gray-50 transition-colors ${language === lang.code ? 'text-[#D2B48C] font-bold bg-[#D2B48C]/5' : 'text-gray-700'
+                        className={`w-full flex items-center justify-between px-4 py-3 text-sm hover:bg-gray-50 transition-colors ${language === lang.code ? 'text-[#C19A6B] font-bold bg-[#C19A6B]/5' : 'text-gray-700'
                           }`}
                       >
                         <span className="flex items-center gap-2">
@@ -163,13 +163,13 @@ export default function HeroNavBar() {
               {/* Primary CTA Button */}
               <a
                 href="/contact"
-                className="group relative px-7 py-3 bg-gradient-to-r from-[#D2B48C] to-[#C19A6B] text-white rounded-xl text-sm font-bold transition-all duration-300 shadow-lg shadow-[#D2B48C]/25 hover:shadow-xl hover:shadow-[#D2B48C]/40 hover:scale-105 overflow-hidden"
+                className="group relative px-7 py-3 bg-gradient-to-r from-[#C19A6B] to-[#A07855] text-white rounded-xl text-sm font-bold transition-all duration-300 shadow-lg shadow-[#C19A6B]/25 hover:shadow-xl hover:shadow-[#C19A6B]/40 hover:scale-105 overflow-hidden"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   <Sparkles className="w-4 h-4" />
                   {t.nav.getScore}
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-[#C19A6B] to-[#D2B48C] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#A07855] to-[#C19A6B] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
             </div>
 
@@ -215,7 +215,7 @@ export default function HeroNavBar() {
                       key={lang.code}
                       onClick={() => setLanguage(lang.code)}
                       className={`px-3 py-2 rounded-lg text-sm border ${language === lang.code
-                          ? 'bg-[#D2B48C] text-white border-[#D2B48C]'
+                          ? 'bg-[#C19A6B] text-white border-[#C19A6B]'
                           : 'bg-white text-gray-600 border-gray-200'
                         }`}
                     >
@@ -227,7 +227,7 @@ export default function HeroNavBar() {
 
               <a
                 href="/contact"
-                className="mt-4 text-center bg-gradient-to-r from-[#D2B48C] to-[#C19A6B] text-white py-4 rounded-xl font-bold shadow-lg"
+                className="mt-4 text-center bg-gradient-to-r from-[#C19A6B] to-[#A07855] text-white py-4 rounded-xl font-bold shadow-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t.nav.getScore}
@@ -242,14 +242,14 @@ export default function HeroNavBar() {
         <div className="max-w-4xl">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8 animate-fadeIn">
-            <Sparkles className="w-4 h-4 text-[#D2B48C]" />
+            <Sparkles className="w-4 h-4 text-[#C19A6B]" />
             <span className="text-sm text-white/90 font-medium">{t.hero.badge}</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white leading-[1.05] mb-8 animate-fadeIn" style={{ animationDelay: '0.2s' }}>
             {t.hero.title} <br />
             <span className="relative">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2B48C] via-[#E6D2B5] to-[#D2B48C] animate-shimmer bg-[length:200%_100%]">{t.hero.titleHighlight}</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C19A6B] via-[#D2B48C] to-[#C19A6B] animate-shimmer bg-[length:200%_100%]">{t.hero.titleHighlight}</span>
             </span>
           </h1>
 
@@ -260,7 +260,7 @@ export default function HeroNavBar() {
           <div className="flex flex-col sm:flex-row gap-5 animate-fadeIn" style={{ animationDelay: '0.6s' }}>
             <a
               href="#score"
-              className="group relative px-10 py-5 bg-gradient-to-r from-[#D2B48C] to-[#C19A6B] text-white font-bold rounded-2xl transition-all duration-300 shadow-2xl shadow-[#D2B48C]/30 hover:shadow-[#D2B48C]/50 hover:scale-105 flex items-center justify-center gap-3 overflow-hidden"
+              className="group relative px-10 py-5 bg-gradient-to-r from-[#C19A6B] to-[#A07855] text-white font-bold rounded-2xl transition-all duration-300 shadow-2xl shadow-[#C19A6B]/30 hover:shadow-[#C19A6B]/50 hover:scale-105 flex items-center justify-center gap-3 overflow-hidden"
             >
               <span className="relative z-10">{t.hero.ctaPrimary}</span>
               <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />

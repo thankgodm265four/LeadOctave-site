@@ -41,7 +41,7 @@ export default function TeamMembersGrid() {
                             className="group cursor-pointer"
                         >
                             {/* Card Container with Hover Effects */}
-                            <div className="transform hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out rounded-2xl p-4 bg-white border border-transparent hover:border-[#D2B48C]/20">
+                            <div className="transform hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out rounded-2xl p-4 bg-white border border-transparent hover:border-[#C19A6B]/20">
 
                                 {/* Member Image */}
                                 <div className="relative overflow-hidden rounded-xl aspect-[3/4] mb-4">
@@ -56,7 +56,7 @@ export default function TeamMembersGrid() {
 
                                 {/* Member Details */}
                                 <div className="text-center">
-                                    <h3 className="text-xl font-semibold text-[#05101E] mb-1 group-hover:text-[#D2B48C] transition-colors duration-300">
+                                    <h3 className="text-xl font-semibold text-[#05101E] mb-1 group-hover:text-[#C19A6B] transition-colors duration-300">
                                         {member.name}
                                     </h3>
                                     <p className="text-gray-500 text-sm group-hover:text-[#05101E] transition-colors duration-300 font-medium">
