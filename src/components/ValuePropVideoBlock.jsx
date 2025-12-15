@@ -9,7 +9,7 @@ export default function ValuePropVideoBlock() {
             <div className="max-w-6xl mx-auto">
 
                 {/* Headline */}
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-center text-[#142C4C] leading-tight mb-16 md:mb-20 max-w-4xl mx-auto">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-center text-[#05101E] leading-tight mb-16 md:mb-20 max-w-4xl mx-auto">
                     Achieving growth relies on taking straightforward & automated measures.
                 </h2>
 
@@ -49,7 +49,7 @@ export default function ValuePropVideoBlock() {
                         <div className="relative w-full max-w-6xl aspect-video">
                             <button
                                 onClick={() => setIsPlaying(false)}
-                                className="absolute -top-12 right-0 text-white hover:text-[#D4A259] transition-colors"
+                                className="absolute -top-12 right-0 text-white hover:text-[#D2B48C] transition-colors"
                                 aria-label="Close video"
                             >
                                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">

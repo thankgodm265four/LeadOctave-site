@@ -35,19 +35,19 @@ export default function FAQSection() {
         <section className="py-24 px-6 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-20 right-20 w-96 h-96 bg-[#D4A259]/5 rounded-full blur-3xl"></div>
+                <div className="absolute top-20 right-20 w-96 h-96 bg-[#D2B48C]/5 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-20 left-20 w-72 h-72 bg-blue-500/5 rounded-full blur-3xl"></div>
             </div>
 
             <div className="max-w-4xl mx-auto relative z-10">
                 {/* Section Header */}
                 <div className="text-center mb-16">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#D4A259]/10 rounded-full mb-6">
-                        <HelpCircle className="w-4 h-4 text-[#D4A259]" />
-                        <span className="text-sm font-bold text-[#D4A259] uppercase tracking-wider">FAQ</span>
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#D2B48C]/10 rounded-full mb-6">
+                        <HelpCircle className="w-4 h-4 text-[#D2B48C]" />
+                        <span className="text-sm font-bold text-[#D2B48C] uppercase tracking-wider">FAQ</span>
                     </div>
-                    <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#142C4C] mb-6">
-                        Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4A259] to-amber-500">Questions</span>
+                    <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#05101E] mb-6">
+                        Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2B48C] to-amber-500">Questions</span>
                     </h2>
                     <p className="text-gray-600 text-lg max-w-2xl mx-auto">
                         Everything you need to know about LeadOctave and our approach to leadership transformation.
@@ -60,7 +60,7 @@ export default function FAQSection() {
                         <div
                             key={index}
                             className={`bg-white rounded-2xl shadow-sm border transition-all duration-300 overflow-hidden ${openIndex === index
-                                    ? 'border-[#D4A259] shadow-lg shadow-[#D4A259]/10'
+                                    ? 'border-[#D2B48C] shadow-lg shadow-[#D2B48C]/10'
                                     : 'border-gray-100 hover:border-gray-200'
                                 }`}
                         >
@@ -68,12 +68,12 @@ export default function FAQSection() {
                                 onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
                                 className="w-full flex items-center justify-between p-6 text-left"
                             >
-                                <span className={`text-lg font-bold transition-colors ${openIndex === index ? 'text-[#D4A259]' : 'text-[#142C4C]'
+                                <span className={`text-lg font-bold transition-colors ${openIndex === index ? 'text-[#D2B48C]' : 'text-[#05101E]'
                                     }`}>
                                     {faq.question}
                                 </span>
                                 <div className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${openIndex === index
-                                        ? 'bg-[#D4A259] rotate-180'
+                                        ? 'bg-[#D2B48C] rotate-180'
                                         : 'bg-gray-100'
                                     }`}>
                                     <ChevronDown className={`w-5 h-5 transition-colors ${openIndex === index ? 'text-white' : 'text-gray-500'
@@ -92,15 +92,15 @@ export default function FAQSection() {
                 </div>
 
                 {/* Bottom CTA */}
-                <div className="text-center mt-12 p-8 bg-gradient-to-r from-[#142C4C] to-[#1a3a5c] rounded-3xl">
+                <div className="text-center mt-12 p-8 bg-gradient-to-r from-[#05101E] to-[#0A1F3D] rounded-3xl">
                     <div className="flex items-center justify-center gap-2 mb-4">
-                        <Sparkles className="w-5 h-5 text-[#D4A259]" />
+                        <Sparkles className="w-5 h-5 text-[#D2B48C]" />
                         <span className="text-white font-medium">Still have questions?</span>
                     </div>
                     <p className="text-gray-300 mb-6">We're here to help. Get in touch with our team.</p>
                     <a
                         href="/contact"
-                        className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#D4A259] to-[#c9a430] text-white font-bold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg"
+                        className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#D2B48C] to-[#C19A6B] text-white font-bold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg"
                     >
                         Contact Us
                     </a>

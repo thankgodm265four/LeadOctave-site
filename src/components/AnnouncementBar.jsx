@@ -21,7 +21,7 @@ export default function AnnouncementBar() {
     if (!isVisible) return null;
 
     return (
-        <div className="bg-gradient-to-r from-[#D4A259] via-[#c9a430] to-[#D4A259] py-2.5 px-4 relative overflow-hidden">
+        <div className="bg-gradient-to-r from-[#D2B48C] via-[#C19A6B] to-[#D2B48C] py-2.5 px-4 relative overflow-hidden">
             {/* Animated Shine Effect */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute inset-0 opacity-20" style={{

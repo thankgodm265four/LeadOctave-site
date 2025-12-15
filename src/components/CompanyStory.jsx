@@ -22,7 +22,7 @@ export default function CompanyStory() {
 
                     {/* Left Column - Large Headline */}
                     <div className="flex flex-col justify-start">
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#142C4C] leading-tight">
+                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#05101E] leading-tight">
                             {slides[activeSlide].headline}
                         </h2>
                     </div>
@@ -48,7 +48,7 @@ export default function CompanyStory() {
                             key={index}
                             onClick={() => setActiveSlide(index)}
                             className={`transition-all duration-300 rounded-full ${index === activeSlide
-                                    ? 'w-3 h-3 bg-[#D4A259]'
+                                    ? 'w-3 h-3 bg-[#D2B48C]'
                                     : 'w-2 h-2 bg-gray-300 hover:bg-gray-400'
                                 }`}
                             aria-label={`Go to slide ${index + 1}`}

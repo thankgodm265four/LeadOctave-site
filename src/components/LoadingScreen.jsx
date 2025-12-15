@@ -30,7 +30,7 @@ export default function LoadingScreen() {
     if (!isLoading) return null;
 
     return (
-        <div className={`fixed inset-0 z-[9999] bg-gradient-to-br from-[#0a1628] via-[#142C4C] to-[#1a3a5c] flex items-center justify-center transition-opacity duration-500 ${isLoading ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+        <div className={`fixed inset-0 z-[9999] bg-gradient-to-br from-[#0a1628] via-[#05101E] to-[#0A1F3D] flex items-center justify-center transition-opacity duration-500 ${isLoading ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
             {/* Animated Background */}
             <div className="absolute inset-0 overflow-hidden">
                 {/* Octave Lines */}
@@ -48,7 +48,7 @@ export default function LoadingScreen() {
                 ))}
 
                 {/* Floating Orbs */}
-                <div className="absolute top-20 right-20 w-72 h-72 bg-[#D4A259]/20 rounded-full blur-3xl animate-float"></div>
+                <div className="absolute top-20 right-20 w-72 h-72 bg-[#D2B48C]/20 rounded-full blur-3xl animate-float"></div>
                 <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
             </div>
 
@@ -65,7 +65,7 @@ export default function LoadingScreen() {
                 {/* Loading Bar */}
                 <div className="w-64 h-1 bg-white/10 rounded-full overflow-hidden mb-4">
                     <div
-                        className="h-full bg-gradient-to-r from-[#D4A259] to-amber-400 rounded-full transition-all duration-300"
+                        className="h-full bg-gradient-to-r from-[#D2B48C] to-amber-400 rounded-full transition-all duration-300"
                         style={{ width: `${Math.min(progress, 100)}%` }}
                     ></div>
                 </div>
@@ -80,7 +80,7 @@ export default function LoadingScreen() {
                     {[0, 1, 2].map((i) => (
                         <div
                             key={i}
-                            className="w-2 h-2 bg-[#D4A259] rounded-full animate-bounce"
+                            className="w-2 h-2 bg-[#D2B48C] rounded-full animate-bounce"
                             style={{ animationDelay: `${i * 0.15}s` }}
                         ></div>
                     ))}

@@ -1,0 +1,149 @@
+/**
+ * LeadOctave Color Scheme
+ * From Chaos to Cadence
+ */
+
+:root {
+  /* Primary Colors - LeadOctave Brand */
+  --color-amber-600: #D97706;
+  --color-amber-700: #B45309;
+  --color-amber-500: #F59E0B;
+
+  /* Secondary Colors - LeadOctave Navy */
+  --color-slate-900: #0F172A;
+  --color-slate-800: #1E293B;
+  --color-slate-700: #334155;
+
+  /* Accent Colors */
+  --color-white: #FFFFFF;
+  --color-gray-50: #F9FAFB;
+  --color-gray-100: #F3F4F6;
+  --color-gray-200: #E5E7EB;
+  --color-gray-400: #9CA3AF;
+  --color-gray-500: #6B7280;
+  --color-gray-600: #4B5563;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+}
+
+/* Global Styles */
+html, body {
+  height: 100%;
+  font-family: 'Inter', system-ui, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-slate-900);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: var(--color-slate-900);
+  font-weight: 700;
+}
+
+a {
+  color: var(--color-amber-600);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-amber-700);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--color-amber-600);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 0.375rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-amber-700);
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-slate-900);
+  border: 2px solid var(--color-slate-900);
+  padding: 0.75rem 2rem;
+  border-radius: 0.375rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-slate-900);
+  color: white;
+}
+
+/* Navigation Styles */
+.nav-link {
+  color: var(--color-slate-700);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-amber-600);
+}
+
+/* Section Styles */
+.section-dark {
+  background-color: var(--color-slate-900);
+  color: white;
+}
+
+.section-light {
+  background-color: var(--color-gray-50);
+  color: var(--color-slate-900);
+}
+
+/* Accent Line */
+.accent-line {
+  border-color: var(--color-amber-600);
+}
+
+/* Text Styles */
+.text-amber {
+  color: var(--color-amber-600);
+}
+
+.text-slate-dark {
+  color: var(--color-slate-900);
+}
+
+/* Loading and animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}

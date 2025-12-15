@@ -28,7 +28,7 @@ export default function FloatingElements() {
             {/* Scroll to Top Button */}
             <button
                 onClick={scrollToTop}
-                className={`fixed bottom-8 right-8 z-50 w-14 h-14 bg-gradient-to-r from-[#142C4C] to-[#1a3a5c] text-white rounded-full shadow-2xl flex items-center justify-center transition-all duration-500 hover:scale-110 hover:shadow-[#142C4C]/50 ${showScrollTop ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0 pointer-events-none'
+                className={`fixed bottom-8 right-8 z-50 w-14 h-14 bg-gradient-to-r from-[#05101E] to-[#0A1F3D] text-white rounded-full shadow-2xl flex items-center justify-center transition-all duration-500 hover:scale-110 hover:shadow-[#05101E]/50 ${showScrollTop ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0 pointer-events-none'
                     }`}
                 aria-label="Scroll to top"
             >
@@ -58,7 +58,7 @@ export default function FloatingElements() {
                 {/* Main FAB Button */}
                 <button
                     onClick={() => setShowQuickActions(!showQuickActions)}
-                    className={`w-16 h-16 bg-gradient-to-r from-[#D4A259] to-[#c9a430] text-white rounded-full shadow-2xl shadow-[#D4A259]/30 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[#D4A259]/50 ${showQuickActions ? 'rotate-45' : ''
+                    className={`w-16 h-16 bg-gradient-to-r from-[#D2B48C] to-[#C19A6B] text-white rounded-full shadow-2xl shadow-[#D2B48C]/30 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[#D2B48C]/50 ${showQuickActions ? 'rotate-45' : ''
                         }`}
                     aria-label="Quick actions"
                 >
@@ -71,7 +71,7 @@ export default function FloatingElements() {
 
                 {/* Pulse Ring */}
                 {!showQuickActions && (
-                    <div className="absolute inset-0 rounded-full bg-[#D4A259] animate-ping opacity-20"></div>
+                    <div className="absolute inset-0 rounded-full bg-[#D2B48C] animate-ping opacity-20"></div>
                 )}
             </div>
 
@@ -99,7 +99,7 @@ function ProgressBar() {
     return (
         <div className="fixed top-0 left-0 right-0 z-[100] h-1 bg-transparent">
             <div
-                className="h-full bg-gradient-to-r from-[#D4A259] to-amber-400 transition-all duration-100"
+                className="h-full bg-gradient-to-r from-[#D2B48C] to-amber-400 transition-all duration-100"
                 style={{ width: `${progress}%` }}
             />
         </div>

@@ -29,7 +29,7 @@ export default function TeamMembersGrid() {
             <div className="max-w-7xl mx-auto">
 
                 {/* Section Header */}
-                <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 md:mb-16 text-[#142C4C]">
+                <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 md:mb-16 text-[#05101E]">
                     Team Members
                 </h2>
 
@@ -41,7 +41,7 @@ export default function TeamMembersGrid() {
                             className="group cursor-pointer"
                         >
                             {/* Card Container with Hover Effects */}
-                            <div className="transform hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out rounded-2xl p-4 bg-white border border-transparent hover:border-[#D4A259]/20">
+                            <div className="transform hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out rounded-2xl p-4 bg-white border border-transparent hover:border-[#D2B48C]/20">
 
                                 {/* Member Image */}
                                 <div className="relative overflow-hidden rounded-xl aspect-[3/4] mb-4">
@@ -51,15 +51,15 @@ export default function TeamMembersGrid() {
                                         className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                                     />
                                     {/* Subtle overlay on hover */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-[#142C4C]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-[#05101E]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                 </div>
 
                                 {/* Member Details */}
                                 <div className="text-center">
-                                    <h3 className="text-xl font-semibold text-[#142C4C] mb-1 group-hover:text-[#D4A259] transition-colors duration-300">
+                                    <h3 className="text-xl font-semibold text-[#05101E] mb-1 group-hover:text-[#D2B48C] transition-colors duration-300">
                                         {member.name}
                                     </h3>
-                                    <p className="text-gray-500 text-sm group-hover:text-[#142C4C] transition-colors duration-300 font-medium">
+                                    <p className="text-gray-500 text-sm group-hover:text-[#05101E] transition-colors duration-300 font-medium">
                                         {member.role}
                                     </p>
                                 </div>

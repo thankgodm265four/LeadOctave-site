@@ -6,7 +6,7 @@ export default function ClientLogos() {
         { name: "TechVision", color: "from-blue-500 to-indigo-600" },
         { name: "GlobalScale", color: "from-emerald-500 to-teal-600" },
         { name: "Innovate Inc", color: "from-purple-500 to-pink-500" },
-        { name: "Summit Group", color: "from-[#D4A259] to-amber-500" },
+        { name: "Summit Group", color: "from-[#D2B48C] to-amber-500" },
         { name: "Apex Partners", color: "from-rose-500 to-orange-500" },
         { name: "Horizon Co", color: "from-cyan-500 to-blue-500" }
     ];
@@ -17,7 +17,7 @@ export default function ClientLogos() {
                 {/* Section Header */}
                 <div className="text-center mb-12">
                     <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-2">Trusted By</p>
-                    <h3 className="text-2xl font-serif font-bold text-[#142C4C]">
+                    <h3 className="text-2xl font-serif font-bold text-[#05101E]">
                         Industry-Leading Organizations
                     </h3>
                 </div>
@@ -63,7 +63,7 @@ export default function ClientLogos() {
                         { number: "98%", label: "Client Satisfaction" }
                     ].map((stat, index) => (
                         <div key={index} className="text-center">
-                            <p className="text-4xl md:text-5xl font-bold text-[#D4A259] mb-2">{stat.number}</p>
+                            <p className="text-4xl md:text-5xl font-bold text-[#D2B48C] mb-2">{stat.number}</p>
                             <p className="text-gray-600 text-sm">{stat.label}</p>
                         </div>
                     ))}

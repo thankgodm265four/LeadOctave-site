@@ -39,7 +39,7 @@ export default function OctaveModel() {
             title: "Trust",
             description: "Build credibility and warmth that fosters engagement and collaboration.",
             icon: <Handshake className="w-6 h-6" />,
-            color: "from-[#D4A259] to-amber-500"
+            color: "from-[#D2B48C] to-amber-500"
         },
         {
             number: "04",
@@ -94,11 +94,11 @@ export default function OctaveModel() {
     return (
         <div className="min-h-screen bg-white">
             {/* Hero Section */}
-            <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 px-6 bg-gradient-to-br from-[#0a1628] via-[#142C4C] to-[#1a3a5c] overflow-hidden">
+            <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 px-6 bg-gradient-to-br from-[#0a1628] via-[#05101E] to-[#0A1F3D] overflow-hidden">
                 {/* Animated Background */}
                 <div className="absolute inset-0">
                     {/* Floating Orbs */}
-                    <div className="absolute top-20 right-20 w-96 h-96 bg-[#D4A259]/20 rounded-full blur-3xl animate-float"></div>
+                    <div className="absolute top-20 right-20 w-96 h-96 bg-[#D2B48C]/20 rounded-full blur-3xl animate-float"></div>
                     <div className="absolute bottom-20 left-20 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
                     <div className="absolute top-1/2 left-1/2 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
 
@@ -127,23 +127,23 @@ export default function OctaveModel() {
 
                 <div className="max-w-5xl mx-auto text-center relative z-10">
                     {/* Badge */}
-                    <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#D4A259]/20 backdrop-blur-sm rounded-full border border-[#D4A259]/30 mb-10 animate-fadeIn">
-                        <Sparkles className="w-4 h-4 text-[#D4A259]" />
+                    <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#D2B48C]/20 backdrop-blur-sm rounded-full border border-[#D2B48C]/30 mb-10 animate-fadeIn">
+                        <Sparkles className="w-4 h-4 text-[#D2B48C]" />
                         <span className="text-sm text-white font-bold uppercase tracking-wider">The Framework</span>
                     </div>
 
                     <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white leading-[1.05] mb-8 animate-fadeIn" style={{ animationDelay: '0.2s' }}>
                         The Octave Model™ <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4A259] via-[#e8c547] to-[#D4A259] animate-shimmer bg-[length:200%_100%]">Leadership in Rhythm</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2B48C] via-[#E6D2B5] to-[#D2B48C] animate-shimmer bg-[length:200%_100%]">Leadership in Rhythm</span>
                     </h1>
 
                     <p className="text-xl md:text-2xl text-gray-300 mb-14 max-w-3xl mx-auto leading-relaxed animate-fadeIn" style={{ animationDelay: '0.4s' }}>
-                        Eight measurable pillars that transform chaos into clarity, and leaders into <span className="text-[#D4A259] font-semibold">systems architects</span>.
+                        Eight measurable pillars that transform chaos into clarity, and leaders into <span className="text-[#D2B48C] font-semibold">systems architects</span>.
                     </p>
 
                     <a
                         href="/contact"
-                        className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#D4A259] to-[#c9a430] text-white font-bold text-lg rounded-2xl transition-all duration-300 shadow-2xl shadow-[#D4A259]/30 hover:shadow-[#D4A259]/50 hover:scale-105 animate-fadeIn"
+                        className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#D2B48C] to-[#C19A6B] text-white font-bold text-lg rounded-2xl transition-all duration-300 shadow-2xl shadow-[#D2B48C]/30 hover:shadow-[#D2B48C]/50 hover:scale-105 animate-fadeIn"
                         style={{ animationDelay: '0.6s' }}
                     >
                         Start Your Octave Journey
@@ -161,30 +161,30 @@ export default function OctaveModel() {
 
             {/* Introduction / Problem Statement */}
             <section className="py-24 px-6 bg-white relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-96 h-96 bg-[#D4A259]/5 rounded-full blur-3xl"></div>
+                <div className="absolute top-0 right-0 w-96 h-96 bg-[#D2B48C]/5 rounded-full blur-3xl"></div>
 
                 <div className="max-w-4xl mx-auto text-center relative z-10">
                     <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8">
                         Most organizations struggle not because of talent, but because leadership is <span className="font-bold text-red-500">improvised, fragmented, or inconsistent</span>. Teams lose focus, decisions get delayed, and culture breaks down.
                     </p>
                     <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
-                        <span className="font-bold text-[#142C4C]">The Octave Model™</span> provides a repeatable, structured framework to design leadership that <span className="text-[#D4A259] font-bold">scales and endures</span>. Each pillar addresses a critical dimension of organizational clarity and performance.
+                        <span className="font-bold text-[#05101E]">The Octave Model™</span> provides a repeatable, structured framework to design leadership that <span className="text-[#D2B48C] font-bold">scales and endures</span>. Each pillar addresses a critical dimension of organizational clarity and performance.
                     </p>
                 </div>
             </section>
 
             {/* The 8 Pillars Section */}
             <section className="py-24 px-6 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
-                <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-[#142C4C]/5 to-transparent rounded-full blur-3xl"></div>
+                <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-[#05101E]/5 to-transparent rounded-full blur-3xl"></div>
 
                 <div className="max-w-7xl mx-auto relative z-10">
                     {/* Section Header */}
                     <div className="text-center mb-20">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#142C4C]/5 rounded-full mb-6">
-                            <span className="text-sm font-bold text-[#142C4C] uppercase tracking-wider">The Framework</span>
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#05101E]/5 rounded-full mb-6">
+                            <span className="text-sm font-bold text-[#05101E] uppercase tracking-wider">The Framework</span>
                         </div>
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#142C4C] mb-6">
-                            The 8 Pillars of <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4A259] to-amber-500">Leadership</span>
+                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#05101E] mb-6">
+                            The 8 Pillars of <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2B48C] to-amber-500">Leadership</span>
                         </h2>
                         <p className="text-gray-600 text-lg max-w-2xl mx-auto">
                             Each pillar is designed to address a critical dimension of organizational clarity and sustainable performance.
@@ -212,10 +212,10 @@ export default function OctaveModel() {
                                         {pillar.icon}
                                     </div>
 
-                                    <h3 className="text-xl font-bold text-[#142C4C] mb-3 font-serif">{pillar.title}</h3>
+                                    <h3 className="text-xl font-bold text-[#05101E] mb-3 font-serif">{pillar.title}</h3>
                                     <p className="text-gray-600 text-sm leading-relaxed mb-4">{pillar.description}</p>
 
-                                    <a href="/services/system-design" className="inline-flex items-center gap-2 text-sm font-bold text-[#142C4C] group-hover:text-[#D4A259] transition-colors">
+                                    <a href="/services/system-design" className="inline-flex items-center gap-2 text-sm font-bold text-[#05101E] group-hover:text-[#D2B48C] transition-colors">
                                         Learn More
                                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                     </a>
@@ -227,7 +227,7 @@ export default function OctaveModel() {
             </section>
 
             {/* Before → After Visualization */}
-            <section className="py-24 px-6 bg-[#142C4C] relative overflow-hidden">
+            <section className="py-24 px-6 bg-[#05101E] relative overflow-hidden">
                 {/* Background Pattern */}
                 <div className="absolute inset-0 opacity-5">
                     <div className="absolute inset-0" style={{
@@ -243,7 +243,7 @@ export default function OctaveModel() {
                             <span className="text-sm font-bold text-white/90 uppercase tracking-wider">Transformation</span>
                         </div>
                         <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
-                            From <span className="text-red-400">Chaos</span> to <span className="text-[#D4A259]">Cadence</span>
+                            From <span className="text-red-400">Chaos</span> to <span className="text-[#D2B48C]">Cadence</span>
                         </h2>
                     </div>
 
@@ -275,16 +275,16 @@ export default function OctaveModel() {
 
                         {/* Arrow in Middle (Desktop) */}
                         <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
-                            <div className="w-16 h-16 bg-gradient-to-r from-[#D4A259] to-amber-500 rounded-full flex items-center justify-center shadow-2xl">
+                            <div className="w-16 h-16 bg-gradient-to-r from-[#D2B48C] to-amber-500 rounded-full flex items-center justify-center shadow-2xl">
                                 <ArrowRight className="w-8 h-8 text-white" />
                             </div>
                         </div>
 
                         {/* After Column */}
-                        <div className="bg-[#D4A259]/10 backdrop-blur-sm border border-[#D4A259]/20 rounded-3xl p-10">
+                        <div className="bg-[#D2B48C]/10 backdrop-blur-sm border border-[#D2B48C]/20 rounded-3xl p-10">
                             <div className="flex items-center gap-3 mb-8">
-                                <div className="w-12 h-12 bg-[#D4A259]/20 rounded-xl flex items-center justify-center">
-                                    <CheckCircle className="w-6 h-6 text-[#D4A259]" />
+                                <div className="w-12 h-12 bg-[#D2B48C]/20 rounded-xl flex items-center justify-center">
+                                    <CheckCircle className="w-6 h-6 text-[#D2B48C]" />
                                 </div>
                                 <h3 className="text-2xl font-bold text-white">After</h3>
                             </div>
@@ -297,7 +297,7 @@ export default function OctaveModel() {
                                     "Proactive strategic leadership"
                                 ].map((item, index) => (
                                     <div key={index} className="flex items-start gap-4">
-                                        <div className="w-2 h-2 bg-[#D4A259] rounded-full mt-2.5 flex-shrink-0"></div>
+                                        <div className="w-2 h-2 bg-[#D2B48C] rounded-full mt-2.5 flex-shrink-0"></div>
                                         <p className="text-gray-300">{item}</p>
                                     </div>
                                 ))}
@@ -317,7 +317,7 @@ export default function OctaveModel() {
                             <Zap className="w-4 h-4 text-emerald-600" />
                             <span className="text-sm font-bold text-emerald-600 uppercase tracking-wider">The Advantage</span>
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#142C4C] mb-4">
+                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#05101E] mb-4">
                             Why It <span className="text-emerald-500">Works</span>
                         </h2>
                     </div>
@@ -327,17 +327,17 @@ export default function OctaveModel() {
                             <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                                 <Zap className="w-8 h-8 text-white" />
                             </div>
-                            <h3 className="text-2xl font-bold text-[#142C4C] mb-4">Systemic</h3>
+                            <h3 className="text-2xl font-bold text-[#05101E] mb-4">Systemic</h3>
                             <p className="text-gray-600 leading-relaxed">
                                 Leadership becomes predictable and teachable. No more relying on individual heroics.
                             </p>
                         </div>
 
                         <div className="bg-gradient-to-br from-gray-50 to-white p-10 rounded-3xl border border-gray-100 hover:shadow-xl transition-all duration-300">
-                            <div className="w-16 h-16 bg-gradient-to-br from-[#D4A259] to-amber-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                            <div className="w-16 h-16 bg-gradient-to-br from-[#D2B48C] to-amber-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                                 <RefreshCcw className="w-8 h-8 text-white" />
                             </div>
-                            <h3 className="text-2xl font-bold text-[#142C4C] mb-4">Repeatable</h3>
+                            <h3 className="text-2xl font-bold text-[#05101E] mb-4">Repeatable</h3>
                             <p className="text-gray-600 leading-relaxed">
                                 Frameworks that can be implemented across teams and organizations consistently.
                             </p>
@@ -347,7 +347,7 @@ export default function OctaveModel() {
                             <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                                 <TrendingUp className="w-8 h-8 text-white" />
                             </div>
-                            <h3 className="text-2xl font-bold text-[#142C4C] mb-4">Scalable</h3>
+                            <h3 className="text-2xl font-bold text-[#05101E] mb-4">Scalable</h3>
                             <p className="text-gray-600 leading-relaxed">
                                 Works in small startups and large enterprises alike. Grows with your organization.
                             </p>
@@ -358,7 +358,7 @@ export default function OctaveModel() {
                     <div className="text-center mt-16">
                         <a
                             href="/contact"
-                            className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#142C4C] to-[#1a3a5c] text-white font-bold text-lg rounded-2xl transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"
+                            className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#05101E] to-[#0A1F3D] text-white font-bold text-lg rounded-2xl transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"
                         >
                             Take the Octave Diagnostic
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -371,11 +371,11 @@ export default function OctaveModel() {
             <section className="py-24 px-6 bg-gray-50 relative overflow-hidden">
                 <div className="max-w-6xl mx-auto relative z-10">
                     <div className="text-center mb-16">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#D4A259]/10 rounded-full mb-6">
-                            <Quote className="w-4 h-4 text-[#D4A259]" />
-                            <span className="text-sm font-bold text-[#D4A259] uppercase tracking-wider">Testimonials</span>
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#D2B48C]/10 rounded-full mb-6">
+                            <Quote className="w-4 h-4 text-[#D2B48C]" />
+                            <span className="text-sm font-bold text-[#D2B48C] uppercase tracking-wider">Testimonials</span>
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#142C4C]">
+                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#05101E]">
                             Trusted Results
                         </h2>
                     </div>
@@ -383,16 +383,16 @@ export default function OctaveModel() {
                     <div className="grid md:grid-cols-2 gap-8">
                         {testimonials.map((testimonial, index) => (
                             <div key={index} className="bg-white p-10 rounded-3xl shadow-lg border border-gray-100 relative">
-                                <Quote className="w-12 h-12 text-[#D4A259]/20 absolute top-8 right-8" />
+                                <Quote className="w-12 h-12 text-[#D2B48C]/20 absolute top-8 right-8" />
                                 <p className="text-xl text-gray-700 leading-relaxed mb-8 italic">
                                     "{testimonial.quote}"
                                 </p>
                                 <div className="flex items-center gap-4">
-                                    <div className="w-14 h-14 bg-gradient-to-br from-[#142C4C] to-[#1a3a5c] rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                    <div className="w-14 h-14 bg-gradient-to-br from-[#05101E] to-[#0A1F3D] rounded-full flex items-center justify-center text-white font-bold text-xl">
                                         {testimonial.author.split(' ').map(n => n[0]).join('')}
                                     </div>
                                     <div>
-                                        <p className="font-bold text-[#142C4C]">{testimonial.author}</p>
+                                        <p className="font-bold text-[#05101E]">{testimonial.author}</p>
                                         <p className="text-gray-500 text-sm">{testimonial.role}</p>
                                     </div>
                                 </div>
@@ -403,7 +403,7 @@ export default function OctaveModel() {
             </section>
 
             {/* Closing CTA */}
-            <section className="py-32 px-6 bg-gradient-to-br from-[#D4A259] via-[#c9a430] to-[#b8962e] relative overflow-hidden">
+            <section className="py-32 px-6 bg-gradient-to-br from-[#D2B48C] via-[#C19A6B] to-[#b8962e] relative overflow-hidden">
                 {/* Animated Octave Lines */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="absolute top-10 left-10 w-40 h-40 bg-white/10 rounded-full blur-2xl animate-float"></div>
@@ -433,7 +433,7 @@ export default function OctaveModel() {
                     </p>
                     <a
                         href="/contact"
-                        className="group inline-flex items-center gap-4 px-14 py-6 bg-white text-[#142C4C] font-bold text-xl rounded-2xl transition-all duration-300 shadow-2xl hover:shadow-white/25 transform hover:-translate-y-1 hover:scale-105"
+                        className="group inline-flex items-center gap-4 px-14 py-6 bg-white text-[#05101E] font-bold text-xl rounded-2xl transition-all duration-300 shadow-2xl hover:shadow-white/25 transform hover:-translate-y-1 hover:scale-105"
                     >
                         Start Your Octave Journey
                         <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />

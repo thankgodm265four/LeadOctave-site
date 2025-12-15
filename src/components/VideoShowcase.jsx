@@ -41,19 +41,19 @@ export default function VideoShowcase() {
         <section className="py-24 px-6 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-20 left-20 w-72 h-72 bg-[#D4A259]/5 rounded-full blur-3xl"></div>
+                <div className="absolute top-20 left-20 w-72 h-72 bg-[#D2B48C]/5 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
             </div>
 
             <div className="max-w-7xl mx-auto relative z-10">
                 {/* Section Header */}
                 <div className="text-center mb-16">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#142C4C]/5 rounded-full mb-6">
-                        <Play className="w-4 h-4 text-[#142C4C]" />
-                        <span className="text-sm font-bold text-[#142C4C] uppercase tracking-wider">Video Showcase</span>
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#05101E]/5 rounded-full mb-6">
+                        <Play className="w-4 h-4 text-[#05101E]" />
+                        <span className="text-sm font-bold text-[#05101E] uppercase tracking-wider">Video Showcase</span>
                     </div>
-                    <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#142C4C] mb-6">
-                        See the <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4A259] to-amber-500">Transformation</span>
+                    <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#05101E] mb-6">
+                        See the <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2B48C] to-amber-500">Transformation</span>
                     </h2>
                     <p className="text-gray-600 text-lg max-w-2xl mx-auto">
                         Watch how organizations are revolutionizing their leadership with the LeadOctave approach.
@@ -80,8 +80,8 @@ export default function VideoShowcase() {
                                 onClick={() => setIsPlaying(!isPlaying)}
                                 className="absolute inset-0 flex items-center justify-center group"
                             >
-                                <div className={`w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 group-hover:scale-110 group-hover:bg-[#D4A259] ${isPlaying ? 'opacity-0' : 'opacity-100'}`}>
-                                    <Play className="w-8 h-8 text-[#142C4C] ml-1 group-hover:text-white transition-colors" fill="currentColor" />
+                                <div className={`w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 group-hover:scale-110 group-hover:bg-[#D2B48C] ${isPlaying ? 'opacity-0' : 'opacity-100'}`}>
+                                    <Play className="w-8 h-8 text-[#05101E] ml-1 group-hover:text-white transition-colors" fill="currentColor" />
                                 </div>
                             </button>
 
@@ -134,7 +134,7 @@ export default function VideoShowcase() {
                                     setIsPlaying(false);
                                 }}
                                 className={`w-full flex gap-4 p-4 rounded-2xl transition-all duration-300 text-left ${currentVideo === index
-                                    ? 'bg-gradient-to-r from-[#142C4C] to-[#1a3a5c] shadow-xl'
+                                    ? 'bg-gradient-to-r from-[#05101E] to-[#0A1F3D] shadow-xl'
                                     : 'bg-white hover:bg-gray-50 border border-gray-100'
                                     }`}
                             >
@@ -145,14 +145,14 @@ export default function VideoShowcase() {
                                         alt={video.title}
                                         className="w-full h-full object-cover"
                                     />
-                                    <div className={`absolute inset-0 flex items-center justify-center ${currentVideo === index ? 'bg-[#D4A259]/80' : 'bg-black/40'}`}>
+                                    <div className={`absolute inset-0 flex items-center justify-center ${currentVideo === index ? 'bg-[#D2B48C]/80' : 'bg-black/40'}`}>
                                         <Play className="w-4 h-4 text-white" fill="white" />
                                     </div>
                                 </div>
 
                                 {/* Info */}
                                 <div className="flex-1 min-w-0">
-                                    <h4 className={`font-bold text-sm mb-1 truncate ${currentVideo === index ? 'text-white' : 'text-[#142C4C]'}`}>
+                                    <h4 className={`font-bold text-sm mb-1 truncate ${currentVideo === index ? 'text-white' : 'text-[#05101E]'}`}>
                                         {video.title}
                                     </h4>
                                     <p className={`text-xs ${currentVideo === index ? 'text-gray-300' : 'text-gray-500'}`}>
@@ -165,7 +165,7 @@ export default function VideoShowcase() {
                         {/* View All Link */}
                         <a
                             href="#videos"
-                            className="block text-center py-4 text-[#D4A259] font-bold hover:underline"
+                            className="block text-center py-4 text-[#D2B48C] font-bold hover:underline"
                         >
                             View All Videos →
                         </a>

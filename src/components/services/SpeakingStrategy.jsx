@@ -26,7 +26,7 @@ export default function SpeakingStrategy() {
     return (
         <div className="min-h-screen bg-white">
             {/* Hero Section */}
-            <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 px-6 bg-gradient-to-br from-[#0a1628] via-[#142C4C] to-[#1a3a5c] overflow-hidden">
+            <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 px-6 bg-gradient-to-br from-[#0a1628] via-[#05101E] to-[#0A1F3D] overflow-hidden">
                 {/* Animated Background */}
                 <div className="absolute inset-0">
                     <div className="absolute top-20 right-20 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-float"></div>
@@ -92,7 +92,7 @@ export default function SpeakingStrategy() {
                                 <div>
                                     <div className="flex items-center gap-1 mb-1">
                                         {[1, 2, 3, 4, 5].map((i) => (
-                                            <Star key={i} className="w-4 h-4 text-[#D4A259] fill-[#D4A259]" />
+                                            <Star key={i} className="w-4 h-4 text-[#D2B48C] fill-[#D2B48C]" />
                                         ))}
                                     </div>
                                     <p className="text-sm text-gray-400">100+ keynotes delivered globally</p>
@@ -113,7 +113,7 @@ export default function SpeakingStrategy() {
                                         <p className="text-sm text-gray-400">Leaders Inspired</p>
                                     </div>
                                     <div className="bg-white/10 rounded-2xl p-6 text-center">
-                                        <p className="text-4xl font-bold text-[#D4A259] mb-2">98%</p>
+                                        <p className="text-4xl font-bold text-[#D2B48C] mb-2">98%</p>
                                         <p className="text-sm text-gray-400">Would Recommend</p>
                                     </div>
                                     <div className="bg-white/10 rounded-2xl p-6 text-center">
@@ -143,7 +143,7 @@ export default function SpeakingStrategy() {
                                 <AlertTriangle className="w-4 h-4 text-red-500" />
                                 <span className="text-sm font-bold text-red-600 uppercase tracking-wider">The Problem</span>
                             </div>
-                            <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#142C4C] mb-6 leading-tight">
+                            <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#05101E] mb-6 leading-tight">
                                 Inspiration Without <span className="text-red-500">Execution</span>
                             </h2>
                             <p className="text-lg text-gray-600 leading-relaxed mb-8">
@@ -165,7 +165,7 @@ export default function SpeakingStrategy() {
 
                         <div className="lg:w-1/2">
                             <div className="bg-white p-10 rounded-3xl shadow-2xl border border-gray-100">
-                                <h3 className="text-lg font-bold text-[#142C4C] mb-6">Common Symptoms</h3>
+                                <h3 className="text-lg font-bold text-[#05101E] mb-6">Common Symptoms</h3>
                                 <div className="space-y-5">
                                     {[
                                         "Motivational talks without practical frameworks",
@@ -198,7 +198,7 @@ export default function SpeakingStrategy() {
                             <Sparkles className="w-4 h-4 text-purple-600" />
                             <span className="text-sm font-bold text-purple-600 uppercase tracking-wider">Our Solution</span>
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#142C4C] mb-6">
+                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#05101E] mb-6">
                             Executive Keynotes & <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">Strategic Sessions</span>
                         </h2>
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -216,7 +216,7 @@ export default function SpeakingStrategy() {
                                     <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                                         <span className="text-2xl font-bold text-white">0{index + 1}</span>
                                     </div>
-                                    <h3 className="text-xl font-bold text-[#142C4C] mb-3">{solution.title}</h3>
+                                    <h3 className="text-xl font-bold text-[#05101E] mb-3">{solution.title}</h3>
                                     <p className="text-gray-600">{solution.desc}</p>
                                 </div>
                             </div>
@@ -233,7 +233,7 @@ export default function SpeakingStrategy() {
                             <Target className="w-4 h-4 text-emerald-600" />
                             <span className="text-sm font-bold text-emerald-600 uppercase tracking-wider">The Outcome</span>
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#142C4C] mb-6">
+                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#05101E] mb-6">
                             What You'll <span className="text-emerald-500">Achieve</span>
                         </h2>
                     </div>
@@ -244,7 +244,7 @@ export default function SpeakingStrategy() {
                                 <div className="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">
                                     <CheckCircle className="w-8 h-8 text-emerald-500" />
                                 </div>
-                                <h3 className="text-xl font-bold text-[#142C4C] mb-3">{outcome.title}</h3>
+                                <h3 className="text-xl font-bold text-[#05101E] mb-3">{outcome.title}</h3>
                                 <p className="text-gray-600">{outcome.desc}</p>
                             </div>
                         ))}

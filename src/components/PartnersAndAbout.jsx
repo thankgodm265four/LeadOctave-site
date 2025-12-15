@@ -17,7 +17,7 @@ export default function PartnersAndAbout() {
       <div className="flex flex-col md:flex-row w-full min-h-96">
 
         {/* Left Box - Dark Background with Text */}
-        <div className="w-full md:w-[30%] bg-[#142C4C] flex flex-col justify-center p-10 md:p-16">
+        <div className="w-full md:w-[30%] bg-[#05101E] flex flex-col justify-center p-10 md:p-16">
           <p className="text-xs uppercase tracking-widest text-gray-400 mb-4 font-semibold">
             Our Trusted Partners
           </p>

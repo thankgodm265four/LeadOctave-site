@@ -68,13 +68,13 @@ export default function ChatWidget() {
                     }`}
             >
                 {/* Header */}
-                <div className="bg-gradient-to-r from-[#142C4C] to-[#1a3a5c] p-4 flex items-center justify-between text-white">
+                <div className="bg-gradient-to-r from-[#05101E] to-[#0A1F3D] p-4 flex items-center justify-between text-white">
                     <div className="flex items-center gap-3">
                         <div className="relative">
                             <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center border border-white/20">
-                                <User className="w-6 h-6 text-[#D4A259]" />
+                                <User className="w-6 h-6 text-[#D2B48C]" />
                             </div>
-                            <div className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-[#142C4C] rounded-full"></div>
+                            <div className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-[#05101E] rounded-full"></div>
                         </div>
                         <div>
                             <h3 className="font-bold text-sm">LeadOctave Support</h3>
@@ -105,7 +105,7 @@ export default function ChatWidget() {
                         >
                             <div
                                 className={`max-w-[80%] p-3 rounded-2xl text-sm shadow-sm ${msg.sender === 'user'
-                                        ? 'bg-[#142C4C] text-white rounded-tr-none'
+                                        ? 'bg-[#05101E] text-white rounded-tr-none'
                                         : 'bg-white text-gray-700 border border-gray-100 rounded-tl-none'
                                     }`}
                             >
@@ -131,7 +131,7 @@ export default function ChatWidget() {
 
                 {/* Input Area */}
                 <form onSubmit={handleSend} className="p-3 bg-white border-t border-gray-100 flex items-center gap-2">
-                    <button type="button" className="p-2 text-gray-400 hover:text-[#142C4C] transition-colors">
+                    <button type="button" className="p-2 text-gray-400 hover:text-[#05101E] transition-colors">
                         <Paperclip className="w-5 h-5" />
                     </button>
                     <input
@@ -139,12 +139,12 @@ export default function ChatWidget() {
                         value={inputValue}
                         onChange={(e) => setInputValue(e.target.value)}
                         placeholder="Type your message..."
-                        className="flex-1 bg-gray-50 border-none rounded-xl px-4 py-2 text-sm focus:ring-2 focus:ring-[#D4A259]/50 outline-none"
+                        className="flex-1 bg-gray-50 border-none rounded-xl px-4 py-2 text-sm focus:ring-2 focus:ring-[#D2B48C]/50 outline-none"
                     />
                     <button
                         type="submit"
                         disabled={!inputValue.trim()}
-                        className="p-2 bg-[#D4A259] text-white rounded-xl hover:bg-[#c9a430] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="p-2 bg-[#D2B48C] text-white rounded-xl hover:bg-[#C19A6B] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                         <Send className="w-5 h-5" />
                     </button>
@@ -156,7 +156,7 @@ export default function ChatWidget() {
                 onClick={() => setIsOpen(!isOpen)}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
-                className={`group relative flex items-center justify-center w-14 h-14 rounded-full shadow-lg shadow-[#D4A259]/30 transition-all duration-300 ${isOpen ? 'bg-[#142C4C] rotate-90' : 'bg-gradient-to-r from-[#D4A259] to-[#c9a430] hover:scale-110'
+                className={`group relative flex items-center justify-center w-14 h-14 rounded-full shadow-lg shadow-[#D2B48C]/30 transition-all duration-300 ${isOpen ? 'bg-[#05101E] rotate-90' : 'bg-gradient-to-r from-[#D2B48C] to-[#C19A6B] hover:scale-110'
                     }`}
             >
                 {isOpen ? (
@@ -169,7 +169,7 @@ export default function ChatWidget() {
                 {!isOpen && (
                     <div className={`absolute right-full mr-4 bg-white px-4 py-2 rounded-xl shadow-lg border border-gray-100 whitespace-nowrap transition-all duration-300 ${isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4 pointer-events-none'
                         }`}>
-                        <p className="text-sm font-bold text-[#142C4C]">Chat with us 👋</p>
+                        <p className="text-sm font-bold text-[#05101E]">Chat with us 👋</p>
                         {/* Arrow */}
                         <div className="absolute top-1/2 -right-1.5 -translate-y-1/2 w-3 h-3 bg-white rotate-45 border-t border-r border-gray-100"></div>
                     </div>

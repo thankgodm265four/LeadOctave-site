@@ -67,7 +67,7 @@ export default function ProjectShowcaseGrid() {
                                         <div className="text-6xl md:text-7xl font-bold text-gray-300">
                                             {project.number}
                                         </div>
-                                        <h3 className="text-2xl md:text-3xl font-bold text-[#142C4C]">
+                                        <h3 className="text-2xl md:text-3xl font-bold text-[#05101E]">
                                             {project.title}
                                         </h3>
                                         <p className="text-gray-600 text-base leading-relaxed">
@@ -75,7 +75,7 @@ export default function ProjectShowcaseGrid() {
                                         </p>
                                         <a
                                             href="/services/system-design"
-                                            className="inline-flex items-center gap-2 text-[#142C4C] hover:text-[#D4A259] font-semibold transition-colors duration-300 group"
+                                            className="inline-flex items-center gap-2 text-[#05101E] hover:text-[#D2B48C] font-semibold transition-colors duration-300 group"
                                         >
                                             View project
                                             <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" />
@@ -90,7 +90,7 @@ export default function ProjectShowcaseGrid() {
                                         <div className="text-6xl md:text-7xl font-bold text-gray-300">
                                             {project.number}
                                         </div>
-                                        <h3 className="text-2xl md:text-3xl font-bold text-[#142C4C]">
+                                        <h3 className="text-2xl md:text-3xl font-bold text-[#05101E]">
                                             {project.title}
                                         </h3>
                                         <p className="text-gray-600 text-base leading-relaxed">
@@ -98,7 +98,7 @@ export default function ProjectShowcaseGrid() {
                                         </p>
                                         <a
                                             href="/services/system-design"
-                                            className="inline-flex items-center gap-2 text-[#142C4C] hover:text-[#D4A259] font-semibold transition-colors duration-300 group"
+                                            className="inline-flex items-center gap-2 text-[#05101E] hover:text-[#D2B48C] font-semibold transition-colors duration-300 group"
                                         >
                                             View project
                                             <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" />

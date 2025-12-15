@@ -471,7 +471,7 @@ img {
     inset: 0;
     padding: 2px;
     border-radius: inherit;
-    background: linear-gradient(135deg, #D4A259, #142C4C);
+    background: linear-gradient(135deg, #D2B48C, #05101E);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
@@ -496,19 +496,19 @@ img {
   }
 
   .text-gradient-gold {
-    @apply text-transparent bg-clip-text bg-gradient-to-r from-[#D4A259] via-[#e8c547] to-[#D4A259];
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-[#D2B48C] via-[#E6D2B5] to-[#D2B48C];
   }
 
   .text-gradient-navy {
-    @apply text-transparent bg-clip-text bg-gradient-to-r from-[#142C4C] to-[#1a3a5c];
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-[#05101E] to-[#0A1F3D];
   }
 
   .bg-gradient-gold {
-    @apply bg-gradient-to-r from-[#D4A259] to-[#c9a430];
+    @apply bg-gradient-to-r from-[#D2B48C] to-[#C19A6B];
   }
 
   .bg-gradient-navy {
-    @apply bg-gradient-to-br from-[#0a1628] via-[#142C4C] to-[#1a3a5c];
+    @apply bg-gradient-to-br from-[#0a1628] via-[#05101E] to-[#0A1F3D];
   }
 
   .bg-noise {
@@ -518,15 +518,15 @@ img {
 
 @layer components {
   .btn-primary {
-    @apply px-8 py-4 bg-gradient-to-r from-[#D4A259] to-[#c9a430] text-white font-bold rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#D4A259]/30 hover:scale-105 inline-flex items-center gap-2;
+    @apply px-8 py-4 bg-gradient-to-r from-[#D2B48C] to-[#C19A6B] text-white font-bold rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#D2B48C]/30 hover:scale-105 inline-flex items-center gap-2;
   }
 
   .btn-secondary {
-    @apply px-8 py-4 border-2 border-[#142C4C] text-[#142C4C] font-bold rounded-xl transition-all duration-300 hover:bg-[#142C4C] hover:text-white inline-flex items-center gap-2;
+    @apply px-8 py-4 border-2 border-[#05101E] text-[#05101E] font-bold rounded-xl transition-all duration-300 hover:bg-[#05101E] hover:text-white inline-flex items-center gap-2;
   }
 
   .btn-outline-white {
-    @apply px-8 py-4 border-2 border-white/30 text-white font-bold rounded-xl transition-all duration-300 hover:bg-white hover:text-[#142C4C] inline-flex items-center gap-2 backdrop-blur-sm;
+    @apply px-8 py-4 border-2 border-white/30 text-white font-bold rounded-xl transition-all duration-300 hover:bg-white hover:text-[#05101E] inline-flex items-center gap-2 backdrop-blur-sm;
   }
 
   .card {
@@ -543,7 +543,7 @@ img {
 
   .card-interactive::before {
     content: '';
-    @apply absolute inset-0 bg-gradient-to-br from-[#D4A259] to-amber-500 opacity-0 transition-opacity duration-500;
+    @apply absolute inset-0 bg-gradient-to-br from-[#D2B48C] to-amber-500 opacity-0 transition-opacity duration-500;
   }
 
   .card-interactive:hover::before {
@@ -555,11 +555,11 @@ img {
   }
 
   .section-title {
-    @apply text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#142C4C] mb-6;
+    @apply text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#05101E] mb-6;
   }
 
   .gradient-text {
-    @apply text-transparent bg-clip-text bg-gradient-to-r from-[#D4A259] to-amber-500;
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-[#D2B48C] to-amber-500;
   }
 
   .icon-box {
@@ -567,11 +567,11 @@ img {
   }
 
   .icon-box-gold {
-    @apply bg-gradient-to-br from-[#D4A259] to-amber-500 text-white;
+    @apply bg-gradient-to-br from-[#D2B48C] to-amber-500 text-white;
   }
 
   .icon-box-navy {
-    @apply bg-gradient-to-br from-[#142C4C] to-[#1a3a5c] text-white;
+    @apply bg-gradient-to-br from-[#05101E] to-[#0A1F3D] text-white;
   }
 }
 
@@ -585,28 +585,28 @@ img {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #142C4C, #1a3a5c);
+  background: linear-gradient(to bottom, #05101E, #0A1F3D);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #D4A259, #c9a430);
+  background: linear-gradient(to bottom, #D2B48C, #C19A6B);
 }
 
 /* Selection Styling */
 ::selection {
-  background: #D4A259;
+  background: #D2B48C;
   color: white;
 }
 
 ::-moz-selection {
-  background: #D4A259;
+  background: #D2B48C;
   color: white;
 }
 
 /* Focus Styles */
 *:focus-visible {
-  outline: 2px solid #D4A259;
+  outline: 2px solid #D2B48C;
   outline-offset: 2px;
 }
 
@@ -620,7 +620,7 @@ html {
   width: 50px;
   height: 50px;
   border: 3px solid #f3f3f3;
-  border-top: 3px solid #D4A259;
+  border-top: 3px solid #D2B48C;
   border-radius: 50%;
   animation: rotate 1s linear infinite;
 }
@@ -699,7 +699,7 @@ html {
   left: 0;
   width: 0;
   height: 2px;
-  background: #D4A259;
+  background: #D2B48C;
   transition: width 0.3s ease;
 }
 

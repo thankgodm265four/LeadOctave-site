@@ -13,7 +13,7 @@ export default function PillarsSection() {
             title: "Systems",
             description: "Chaos is avoidable. We turn leadership into repeatable frameworks that empower teams.",
             icon: <Settings className="w-8 h-8" />,
-            gradient: "from-[#D4A259] to-amber-500"
+            gradient: "from-[#D2B48C] to-amber-500"
         },
         {
             title: "Sustainability",
@@ -26,18 +26,18 @@ export default function PillarsSection() {
     return (
         <div className="w-full bg-gradient-to-b from-white via-gray-50 to-white py-32 px-6 md:px-16 relative overflow-hidden" id="framework">
             {/* Background Decorations */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-[#D4A259]/5 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#142C4C]/5 rounded-full blur-3xl"></div>
+            <div className="absolute top-0 right-0 w-96 h-96 bg-[#D2B48C]/5 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#05101E]/5 rounded-full blur-3xl"></div>
 
             <div className="max-w-7xl mx-auto relative z-10">
 
                 {/* Section Header */}
                 <div className="text-center mb-20">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#142C4C]/5 rounded-full mb-6">
-                        <span className="text-sm font-bold text-[#142C4C] uppercase tracking-wider">Our Foundation</span>
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#05101E]/5 rounded-full mb-6">
+                        <span className="text-sm font-bold text-[#05101E] uppercase tracking-wider">Our Foundation</span>
                     </div>
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#142C4C] mb-6 leading-tight">
-                        Leadership Built on <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4A259] to-amber-500">Three Pillars</span>
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#05101E] mb-6 leading-tight">
+                        Leadership Built on <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2B48C] to-amber-500">Three Pillars</span>
                     </h2>
                     <p className="text-gray-600 text-lg max-w-2xl mx-auto">
                         The LeadOctave framework is anchored in three timeless principles that drive sustainable leadership excellence.
@@ -62,7 +62,7 @@ export default function PillarsSection() {
                                     {pillar.icon}
                                 </div>
 
-                                <h3 className="text-2xl font-bold text-[#142C4C] mb-4 font-serif group-hover:text-[#D4A259] transition-colors duration-300">
+                                <h3 className="text-2xl font-bold text-[#05101E] mb-4 font-serif group-hover:text-[#D2B48C] transition-colors duration-300">
                                     {pillar.title}
                                 </h3>
 
@@ -70,7 +70,7 @@ export default function PillarsSection() {
                                     {pillar.description}
                                 </p>
 
-                                <a href="/model" className="inline-flex items-center gap-2 text-[#142C4C] font-bold group-hover:text-[#D4A259] transition-colors">
+                                <a href="/model" className="inline-flex items-center gap-2 text-[#05101E] font-bold group-hover:text-[#D2B48C] transition-colors">
                                     Learn more
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </a>
