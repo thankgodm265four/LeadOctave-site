@@ -13,7 +13,7 @@ export default function Footer() {
     ],
     company: [
       { label: "About Us", href: "/about" },
-      { label: "Meet the Founder", href: "/founder" },
+      { label: "Meet Our Team", href: "/team" },
       { label: "Project Bio", href: "/project" },
       { label: "Contact", href: "/contact" }
     ],

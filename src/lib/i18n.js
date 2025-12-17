@@ -7,7 +7,7 @@ export const translations = {
             home: 'Home',
             service: 'Service',
             model: 'Project',
-            founder: 'Founder',
+            founder: 'Team',
             about: 'About',
             contact: 'Contact',
             getScore: 'Get Your Octave Score'
@@ -28,7 +28,7 @@ export const translations = {
             home: 'Inicio',
             service: 'Servicios',
             model: 'Proyecto',
-            founder: 'Fundador',
+            founder: 'Equipo',
             about: 'Nosotros',
             contact: 'Contacto',
             getScore: 'Obtén tu Puntaje'
@@ -49,7 +49,7 @@ export const translations = {
             home: 'Accueil',
             service: 'Services',
             model: 'Projet',
-            founder: 'Fondateur',
+            founder: 'Équipe',
             about: 'À Propos',
             contact: 'Contact',
             getScore: 'Obtenez votre Score'
@@ -70,7 +70,7 @@ export const translations = {
             home: 'Startseite',
             service: 'Leistungen',
             model: 'Projekt',
-            founder: 'Gründer',
+            founder: 'Team',
             about: 'Über Uns',
             contact: 'Kontakt',
             getScore: 'Holen Sie sich Ihren Score'

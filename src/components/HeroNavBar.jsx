@@ -44,7 +44,7 @@ export default function HeroNavBar() {
     { label: t.nav.home, href: '/' },
     { label: t.nav.service, href: '/service' },
     { label: t.nav.model, href: '/project' },
-    { label: t.nav.founder, href: '/founder' },
+    { label: t.nav.founder, href: '/team' },
     { label: t.nav.about, href: '/about' },
     { label: t.nav.contact, href: '/contact' }
   ];
