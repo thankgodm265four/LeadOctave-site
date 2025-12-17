@@ -6,7 +6,7 @@ export const translations = {
         nav: {
             home: 'Home',
             service: 'Service',
-            model: 'Model',
+            model: 'Project',
             founder: 'Founder',
             about: 'About',
             contact: 'Contact',
@@ -27,7 +27,7 @@ export const translations = {
         nav: {
             home: 'Inicio',
             service: 'Servicios',
-            model: 'Modelo',
+            model: 'Proyecto',
             founder: 'Fundador',
             about: 'Nosotros',
             contact: 'Contacto',
@@ -48,7 +48,7 @@ export const translations = {
         nav: {
             home: 'Accueil',
             service: 'Services',
-            model: 'Modèle',
+            model: 'Projet',
             founder: 'Fondateur',
             about: 'À Propos',
             contact: 'Contact',
@@ -69,7 +69,7 @@ export const translations = {
         nav: {
             home: 'Startseite',
             service: 'Leistungen',
-            model: 'Modell',
+            model: 'Projekt',
             founder: 'Gründer',
             about: 'Über Uns',
             contact: 'Kontakt',

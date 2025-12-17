@@ -75,7 +75,7 @@ export default function AboutPage() {
                     </p>
 
                     <a
-                        href="/model"
+                        href="/project"
                         className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#C19A6B] to-[#A07855] text-white font-bold text-lg rounded-2xl transition-all duration-300 shadow-2xl shadow-[#C19A6B]/30 hover:shadow-[#C19A6B]/50 hover:scale-105 animate-fadeIn"
                         style={{ animationDelay: '0.6s' }}
                     >
@@ -377,7 +377,7 @@ export default function AboutPage() {
                     </p>
 
                     <a
-                        href="/model"
+                        href="/project"
                         className="group inline-flex items-center gap-4 px-14 py-6 bg-white text-[#05101E] font-bold text-xl rounded-2xl transition-all duration-300 shadow-2xl hover:shadow-white/25 transform hover:-translate-y-1 hover:scale-105"
                     >
                         <Sparkles className="w-6 h-6" />

@@ -43,7 +43,7 @@ export default function HeroNavBar() {
   const navLinks = [
     { label: t.nav.home, href: '/' },
     { label: t.nav.service, href: '/service' },
-    { label: t.nav.model, href: '/model' },
+    { label: t.nav.model, href: '/project' },
     { label: t.nav.founder, href: '/founder' },
     { label: t.nav.about, href: '/about' },
     { label: t.nav.contact, href: '/contact' }
@@ -215,8 +215,8 @@ export default function HeroNavBar() {
                       key={lang.code}
                       onClick={() => setLanguage(lang.code)}
                       className={`px-3 py-2 rounded-lg text-sm border ${language === lang.code
-                          ? 'bg-[#C19A6B] text-white border-[#C19A6B]'
-                          : 'bg-white text-gray-600 border-gray-200'
+                        ? 'bg-[#C19A6B] text-white border-[#C19A6B]'
+                        : 'bg-white text-gray-600 border-gray-200'
                         }`}
                     >
                       {lang.code.toUpperCase()}

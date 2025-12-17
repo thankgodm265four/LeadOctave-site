@@ -14,7 +14,7 @@ export default function Footer() {
     company: [
       { label: "About Us", href: "/about" },
       { label: "Meet the Founder", href: "/founder" },
-      { label: "The Octave Model™", href: "/model" },
+      { label: "Project Bio", href: "/project" },
       { label: "Contact", href: "/contact" }
     ],
     resources: [

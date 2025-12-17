@@ -109,7 +109,7 @@ export default function FeaturesSection() {
                 {/* Bottom CTA */}
                 <div className="text-center mt-16">
                     <a
-                        href="/model"
+                        href="/project"
                         className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#05101E] to-[#0A1F3D] text-white font-bold text-lg rounded-2xl transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"
                     >
                         Explore the Octave Model™

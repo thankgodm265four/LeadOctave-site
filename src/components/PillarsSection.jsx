@@ -70,7 +70,7 @@ export default function PillarsSection() {
                                     {pillar.description}
                                 </p>
 
-                                <a href="/model" className="inline-flex items-center gap-2 text-[#05101E] font-bold group-hover:text-[#C19A6B] transition-colors">
+                                <a href="/project" className="inline-flex items-center gap-2 text-[#05101E] font-bold group-hover:text-[#C19A6B] transition-colors">
                                     Learn more
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </a>

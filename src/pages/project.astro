@@ -1,0 +1,337 @@
+---
+import HeroNavBar from "../components/HeroNavBar.jsx";
+import Footer from "../components/Footer.jsx";
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Project Bio - LeadOctave</title>
+        <meta
+            name="description"
+            content="Learn about the LeadOctave project, our mission, vision, and the journey to transform organizational leadership."
+        />
+        <link rel="icon" type="image/png" href="/image/leadoctave-logo.png" />
+    </head>
+    <body class="antialiased bg-gray-50">
+        <HeroNavBar client:load />
+
+        <main class="pt-32 pb-20 px-6">
+            <!-- Hero Section -->
+            <section class="max-w-5xl mx-auto text-center mb-20">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 bg-[#C19A6B]/10 rounded-full mb-6"
+                >
+                    <span
+                        class="text-sm font-bold text-[#C19A6B] uppercase tracking-wider"
+                        >The Project</span
+                    >
+                </div>
+                <h1
+                    class="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-[#05101E] mb-8 leading-tight"
+                >
+                    Building Leadership <br />
+                    <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-[#C19A6B] to-[#A07855]"
+                        >That Lasts</span
+                    >
+                </h1>
+                <p
+                    class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+                >
+                    LeadOctave is more than a consulting service—it's a movement
+                    to transform how organizations think about, build, and
+                    sustain leadership.
+                </p>
+            </section>
+
+            <!-- Mission & Vision -->
+            <section class="max-w-6xl mx-auto mb-20">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Mission -->
+                    <div
+                        class="bg-white p-10 rounded-3xl shadow-xl border border-gray-100"
+                    >
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-[#C19A6B] to-[#A07855] rounded-2xl flex items-center justify-center mb-6"
+                        >
+                            <svg
+                                class="w-8 h-8 text-white"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h2
+                            class="text-3xl font-serif font-bold text-[#05101E] mb-4"
+                        >
+                            Our Mission
+                        </h2>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            To engineer leadership systems that move
+                            organizations from chaos to cadence, creating
+                            sustainable frameworks that empower teams and endure
+                            beyond individual personalities.
+                        </p>
+                    </div>
+
+                    <!-- Vision -->
+                    <div
+                        class="bg-white p-10 rounded-3xl shadow-xl border border-gray-100"
+                    >
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-[#05101E] to-[#0A1F3D] rounded-2xl flex items-center justify-center mb-6"
+                        >
+                            <svg
+                                class="w-8 h-8 text-white"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h2
+                            class="text-3xl font-serif font-bold text-[#05101E] mb-4"
+                        >
+                            Our Vision
+                        </h2>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            A world where every organization operates with
+                            clarity, trust, and rhythm—where leadership is not
+                            improvised but architected for lasting impact and
+                            measurable results.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- The Story -->
+            <section class="max-w-4xl mx-auto mb-20">
+                <div
+                    class="bg-gradient-to-br from-[#05101E] to-[#0A1F3D] p-12 rounded-3xl text-white"
+                >
+                    <h2 class="text-4xl font-serif font-bold mb-6">
+                        The Story Behind LeadOctave
+                    </h2>
+                    <div
+                        class="space-y-4 text-lg leading-relaxed text-gray-300"
+                    >
+                        <p>
+                            LeadOctave was born from a simple observation: most
+                            organizations don't fail because of bad people—they
+                            fail because of bad systems. Leadership is often
+                            treated as an art, a talent, or a personality trait.
+                            But what if it could be engineered?
+                        </p>
+                        <p>
+                            Founded by Joshua Tolofari, a seasoned
+                            organizational strategist with over 15 years of
+                            experience, LeadOctave emerged from countless hours
+                            working with executives, teams, and organizations
+                            struggling with the same challenges: unclear roles,
+                            fragmented communication, inconsistent execution,
+                            and cultures built on personalities rather than
+                            principles.
+                        </p>
+                        <p>
+                            The breakthrough came with the development of the <span
+                                class="text-[#C19A6B] font-semibold"
+                                >Octave Model™</span
+                            >—a comprehensive framework that addresses eight
+                            critical dimensions of organizational leadership.
+                            Like musical octaves that create harmony, these
+                            eight pillars work together to create organizational
+                            rhythm and sustainable performance.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Core Values -->
+            <section class="max-w-6xl mx-auto mb-20">
+                <div class="text-center mb-12">
+                    <h2
+                        class="text-4xl md:text-5xl font-serif font-bold text-[#05101E] mb-4"
+                    >
+                        What We Stand For
+                    </h2>
+                    <p class="text-xl text-gray-600">
+                        The principles that guide everything we do
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Value 1 -->
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300"
+                    >
+                        <div class="text-4xl mb-4">🎯</div>
+                        <h3 class="text-xl font-bold text-[#05101E] mb-3">
+                            Clarity Over Complexity
+                        </h3>
+                        <p class="text-gray-600">
+                            We believe in simple, actionable frameworks that
+                            anyone can understand and implement.
+                        </p>
+                    </div>
+
+                    <!-- Value 2 -->
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300"
+                    >
+                        <div class="text-4xl mb-4">🏗️</div>
+                        <h3 class="text-xl font-bold text-[#05101E] mb-3">
+                            Systems Over Personalities
+                        </h3>
+                        <p class="text-gray-600">
+                            Great organizations are built on sustainable
+                            systems, not individual heroics.
+                        </p>
+                    </div>
+
+                    <!-- Value 3 -->
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300"
+                    >
+                        <div class="text-4xl mb-4">📊</div>
+                        <h3 class="text-xl font-bold text-[#05101E] mb-3">
+                            Results Over Theory
+                        </h3>
+                        <p class="text-gray-600">
+                            We measure success by tangible outcomes and lasting
+                            organizational change.
+                        </p>
+                    </div>
+
+                    <!-- Value 4 -->
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300"
+                    >
+                        <div class="text-4xl mb-4">🤝</div>
+                        <h3 class="text-xl font-bold text-[#05101E] mb-3">
+                            Trust Through Transparency
+                        </h3>
+                        <p class="text-gray-600">
+                            We build credibility through honest communication
+                            and proven methodologies.
+                        </p>
+                    </div>
+
+                    <!-- Value 5 -->
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300"
+                    >
+                        <div class="text-4xl mb-4">🌱</div>
+                        <h3 class="text-xl font-bold text-[#05101E] mb-3">
+                            Growth Through Rhythm
+                        </h3>
+                        <p class="text-gray-600">
+                            Sustainable success comes from consistent,
+                            predictable processes and cadences.
+                        </p>
+                    </div>
+
+                    <!-- Value 6 -->
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300"
+                    >
+                        <div class="text-4xl mb-4">♾️</div>
+                        <h3 class="text-xl font-bold text-[#05101E] mb-3">
+                            Impact Beyond Today
+                        </h3>
+                        <p class="text-gray-600">
+                            We design leadership that endures beyond current
+                            leaders and market conditions.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Impact Stats -->
+            <section class="max-w-5xl mx-auto mb-20">
+                <div
+                    class="bg-gradient-to-r from-[#C19A6B] to-[#A07855] p-12 rounded-3xl text-white"
+                >
+                    <h2 class="text-3xl font-serif font-bold text-center mb-12">
+                        Our Impact So Far
+                    </h2>
+                    <div class="grid md:grid-cols-3 gap-8 text-center">
+                        <div>
+                            <div class="text-5xl font-bold mb-2">500+</div>
+                            <div class="text-white/90">Leaders Transformed</div>
+                        </div>
+                        <div>
+                            <div class="text-5xl font-bold mb-2">50+</div>
+                            <div class="text-white/90">
+                                Organizations Served
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-5xl font-bold mb-2">93%</div>
+                            <div class="text-white/90">Client Success Rate</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-serif font-bold text-[#05101E] mb-6">
+                    Ready to Join the Movement?
+                </h2>
+                <p class="text-xl text-gray-600 mb-8">
+                    Discover how the Octave Model™ can transform your
+                    organization's leadership.
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <a
+                        href="/contact"
+                        class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#C19A6B] to-[#A07855] text-white font-bold rounded-xl hover:shadow-xl transition-all duration-300"
+                    >
+                        Start Your Journey
+                        <svg
+                            class="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                    <a
+                        href="/about"
+                        class="inline-flex items-center gap-2 px-8 py-4 border-2 border-[#05101E] text-[#05101E] font-bold rounded-xl hover:bg-[#05101E] hover:text-white transition-all duration-300"
+                    >
+                        Learn More About Us
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <Footer client:load />
+    </body>
+</html>
