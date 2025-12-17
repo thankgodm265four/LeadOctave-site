@@ -23,8 +23,8 @@ export default function ServiceNav() {
     const navLinks = [
         { label: 'Home', href: '/' },
         { label: 'Service', href: '/service' },
-        { label: 'Model', href: '/model' },
-        { label: 'Founder', href: '/founder' },
+        { label: 'Project', href: '/project' },
+        { label: 'Team', href: '/team' },
         { label: 'About', href: '/about' },
         { label: 'Contact', href: '/contact' }
     ];
