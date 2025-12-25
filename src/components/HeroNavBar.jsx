@@ -275,18 +275,7 @@ export default function HeroNavBar() {
             </a>
           </div>
 
-          {/* Trust Indicators */}
-          <div className="mt-16 flex items-center gap-8 animate-fadeIn" style={{ animationDelay: '0.8s' }}>
-            <div className="flex -space-x-3">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="w-12 h-12 rounded-full bg-gradient-to-br from-gray-200 to-gray-400 border-3 border-white/20 shadow-lg"></div>
-              ))}
-            </div>
-            <div>
-              <p className="text-white font-bold text-lg">{t.hero.stats}</p>
-              <p className="text-gray-400 text-sm">{t.hero.statsSub}</p>
-            </div>
-          </div>
+          {/* Trust Indicators - Removed */}
         </div>
       </div>
 
