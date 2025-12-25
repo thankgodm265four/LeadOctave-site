@@ -8,7 +8,7 @@ export default function StatsCounter() {
     const stats = [
         {
             icon: <Users className="w-8 h-8" />,
-            value: 500,
+            value: 20,
             suffix: "+",
             label: "Leaders Transformed",
             color: "from-blue-500 to-indigo-600"
