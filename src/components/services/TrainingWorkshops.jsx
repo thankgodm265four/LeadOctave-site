@@ -95,7 +95,7 @@ export default function TrainingWorkshops() {
                                             <Star key={i} className="w-4 h-4 text-[#C19A6B] fill-[#C19A6B]" />
                                         ))}
                                     </div>
-                                    <p className="text-sm text-gray-400">500+ leaders trained worldwide</p>
+                                    <p className="text-sm text-gray-400">20+ leaders trained worldwide</p>
                                 </div>
                             </div>
                         </div>
