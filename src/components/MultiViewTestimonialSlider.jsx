@@ -87,7 +87,7 @@ export default function MultiViewTestimonialSlider() {
 
         const timer = setInterval(() => {
             setCurrentIndex((prev) => (prev + 1) % testimonials.length);
-        }, 6000);
+        }, 5000); // Changed from 6000 to 5000 for faster transitions
 
         return () => clearInterval(timer);
     }, [isAutoPlaying, testimonials.length]);
@@ -118,14 +118,14 @@ export default function MultiViewTestimonialSlider() {
             <div className="max-w-7xl mx-auto relative z-10">
                 {/* Section Header */}
                 <div className="text-center mb-16">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#C19A6B]/10 rounded-full mb-6">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#C19A6B]/10 rounded-full mb-6 animate-pulse">
                         <Quote className="w-4 h-4 text-[#C19A6B]" />
-                        <span className="text-sm font-bold text-[#C19A6B] uppercase tracking-wider">Testimonials</span>
+                        <span className="text-sm font-bold text-[#C19A6B] uppercase tracking-wider">Client Success Stories</span>
                     </div>
-                    <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#05101E] mb-6">
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#05101E] mb-6">
                         What Leaders <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C19A6B] to-amber-500">Say</span>
                     </h2>
-                    <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+                    <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
                         Real results from real leaders who have transformed their organizations with LeadOctave.
                     </p>
                 </div>
@@ -137,7 +137,7 @@ export default function MultiViewTestimonialSlider() {
                     onTouchMove={onTouchMove}
                     onTouchEnd={onTouchEnd}
                 >
-                    <div className="bg-gradient-to-br from-[#05101E] to-[#0A1F3D] rounded-3xl p-8 md:p-14 shadow-2xl relative overflow-hidden min-h-[400px] flex flex-col justify-center">
+                    <div className="bg-gradient-to-br from-[#05101E] to-[#0A1F3D] rounded-3xl p-8 md:p-14 shadow-2xl relative overflow-hidden min-h-[400px] flex flex-col justify-center transition-all duration-700 ease-in-out">
                         {/* Quote Icon */}
                         <Quote className="absolute top-8 right-8 w-24 h-24 text-white/5" />
 
@@ -233,10 +233,10 @@ export default function MultiViewTestimonialSlider() {
                             style={{ width: currentIndex === index ? '48px' : '16px' }}
                         >
                             <div
-                                className={`h-full bg-[#C19A6B] transition-all duration-300 ${currentIndex === index ? 'w-full' : 'w-0'
+                                className={`h-full bg-gradient-to-r from-[#C19A6B] to-amber-500 transition-all duration-300 ${currentIndex === index ? 'w-full' : 'w-0'
                                     }`}
                                 style={{
-                                    animation: currentIndex === index && isAutoPlaying ? 'progress 6s linear' : 'none'
+                                    animation: currentIndex === index && isAutoPlaying ? 'progress 5s linear' : 'none'
                                 }}
                             />
                         </button>
@@ -247,13 +247,13 @@ export default function MultiViewTestimonialSlider() {
                 <div className="flex justify-center mt-6">
                     <button
                         onClick={() => setIsAutoPlaying(!isAutoPlaying)}
-                        className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm transition-colors ${isAutoPlaying
-                            ? 'bg-[#C19A6B]/10 text-[#C19A6B]'
-                            : 'bg-gray-100 text-gray-500'
+                        className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 ${isAutoPlaying
+                            ? 'bg-gradient-to-r from-[#C19A6B] to-amber-500 text-white'
+                            : 'bg-white text-gray-700 border-2 border-gray-300'
                             }`}
                     >
-                        <Play className={`w-4 h-4 ${isAutoPlaying ? 'animate-pulse' : ''}`} fill={isAutoPlaying ? 'currentColor' : 'none'} />
-                        {isAutoPlaying ? 'Auto-playing' : 'Paused'}
+                        <Play className={`w-4 h-4 ${isAutoPlaying ? 'animate-pulse' : ''}`} fill={isAutoPlaying ? 'white' : 'currentColor'} />
+                        {isAutoPlaying ? 'Auto-Playing Stories' : 'Play Stories'}
                     </button>
                 </div>
             </div>

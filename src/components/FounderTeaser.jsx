@@ -17,9 +17,9 @@ export default function FounderTeaser() {
                         <div className="relative">
                             <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl shadow-gray-300/50">
                                 <img
-                                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&h=1000&fit=crop&q=80"
+                                    src="/image/joshua-tolofari.png"
                                     alt="Joshua Tolofari"
-                                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                                    class="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-105"
                                     loading="lazy"
                                 />
                             </div>
@@ -61,7 +61,7 @@ export default function FounderTeaser() {
 
                         <div className="flex flex-wrap gap-4">
                             <a
-                                href="/founder"
+                                href="/team"
                                 className="group inline-flex items-center gap-3 bg-gradient-to-r from-[#05101E] to-[#0A1F3D] text-white px-8 py-4 rounded-xl font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
                             >
                                 Learn More About Joshua
