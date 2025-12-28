@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Globe, Sparkles, ChevronDown } from 'lucide-react';
+import { Menu, X, Sparkles } from 'lucide-react';
 
 export default function ServiceNav() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -76,25 +76,7 @@ export default function ServiceNav() {
 
                     {/* Right Side */}
                     <div className="hidden lg:flex items-center gap-4">
-                        <button className={`flex items-center gap-2 px-4 py-2.5 rounded-xl transition-all duration-300 ${isScrolled
-                            ? 'text-[#05101E] hover:bg-gray-100'
-                            : 'text-white/90 hover:text-white hover:bg-white/10'
-                            }`}>
-                            <Globe className="w-4 h-4" />
-                            <span className="text-sm font-medium">EN</span>
-                            <ChevronDown className="w-3 h-3" />
-                        </button>
-
-                        <a
-                            href="/contact"
-                            className="group relative px-7 py-3 bg-gradient-to-r from-[#C19A6B] to-[#A07855] text-white rounded-xl text-sm font-bold transition-all duration-300 shadow-lg shadow-[#C19A6B]/30 hover:shadow-xl hover:shadow-[#C19A6B]/50 hover:scale-105 overflow-hidden"
-                        >
-                            <span className="relative z-10 flex items-center gap-2">
-                                <Sparkles className="w-4 h-4" />
-                                Get Your Octave Score
-                            </span>
-                            <div className="absolute inset-0 bg-gradient-to-r from-[#A07855] to-[#C19A6B] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        </a>
+                        {/* Language and CTA removed */}
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -129,13 +111,7 @@ export default function ServiceNav() {
                                 {link.label}
                             </a>
                         ))}
-                        <a
-                            href="/contact"
-                            className="mt-4 text-center bg-gradient-to-r from-[#C19A6B] to-[#A07855] text-white py-4 rounded-xl font-bold shadow-lg"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Get Your Octave Score
-                        </a>
+
                     </div>
                 </div>
             )}
