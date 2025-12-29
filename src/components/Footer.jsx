@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Mail, Phone, MapPin, Linkedin, Twitter, Youtube, ArrowUpRight, Sparkles } from 'lucide-react';
+import { ArrowRight, Mail, Phone, MapPin, ArrowUpRight, Sparkles } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -85,17 +85,7 @@ export default function Footer() {
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Leadership systems that transform organizations from chaos to cadence.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center text-gray-400 hover:bg-[#C19A6B] hover:text-white transition-all duration-300">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center text-gray-400 hover:bg-[#C19A6B] hover:text-white transition-all duration-300">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center text-gray-400 hover:bg-[#C19A6B] hover:text-white transition-all duration-300">
-                <Youtube className="w-5 h-5" />
-              </a>
-            </div>
+
           </div>
 
           {/* Services */}
