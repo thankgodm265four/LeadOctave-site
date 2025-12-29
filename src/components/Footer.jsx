@@ -147,9 +147,9 @@ export default function Footer() {
             <h4 className="text-white font-bold mb-6">Contact</h4>
             <ul className="space-y-4">
               <li>
-                <a href="mailto:hello@leadoctave.com" className="flex items-start gap-3 text-gray-400 hover:text-[#C19A6B] transition-colors text-sm">
+                <a href="mailto:contact.leadoctave@gmail.com" className="flex items-start gap-3 text-gray-400 hover:text-[#C19A6B] transition-colors text-sm">
                   <Mail className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                  <span>hello@leadoctave.com</span>
+                  <span>contact.leadoctave@gmail.com</span>
                 </a>
               </li>
               <li>

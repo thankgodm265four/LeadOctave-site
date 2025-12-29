@@ -19,8 +19,8 @@ export default function FloatingElements() {
 
     const quickActions = [
         { icon: <Calendar className="w-5 h-5" />, label: "Book a Call", href: "/contact", color: "from-blue-500 to-indigo-600" },
-        { icon: <Phone className="w-5 h-5" />, label: "Call Us", href: "tel:+1234567890", color: "from-emerald-500 to-teal-600" },
-        { icon: <Mail className="w-5 h-5" />, label: "Email", href: "mailto:hello@leadoctave.com", color: "from-purple-500 to-pink-500" }
+        { icon: <Phone className="w-5 h-5" />, label: "Call Us", href: "tel:09061679205", color: "from-emerald-500 to-teal-600" },
+        { icon: <Mail className="w-5 h-5" />, label: "Email", href: "mailto:contact.leadoctave@gmail.com", color: "from-purple-500 to-pink-500" }
     ];
 
     return (
