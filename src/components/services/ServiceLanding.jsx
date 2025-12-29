@@ -48,8 +48,8 @@ export default function ServiceLanding() {
     const stats = [
         { number: "20+", label: "Leaders Transformed" },
         { number: "93%", label: "Success Rate" },
-        { number: "50+", label: "Organizations Served" },
-        { number: "15+", label: "Years Experience" }
+        { number: "10+", label: "Organizations Served" },
+        { number: "10+", label: "Combined Years Experience" }
     ];
 
     return (
